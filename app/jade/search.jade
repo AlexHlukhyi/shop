@@ -61,11 +61,15 @@ html(lang="en")
 						a(href='#') Home
 					li
 						a(href='#') Search
-				.wrapper
+				.search-results.wrapper
 					p Showing 1-12 of 44 results
+					select
+						option Sort by newness
+						option Sort by popularity
+						option Sort by cost
 				.items.wrapper
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -83,7 +87,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -101,7 +105,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -119,7 +123,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -137,7 +141,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -155,7 +159,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -173,7 +177,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -191,7 +195,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -209,7 +213,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -227,7 +231,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -245,7 +249,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -263,7 +267,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product
-						img
+						img.middle-image
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -280,6 +284,19 @@ html(lang="en")
 							i.fas.fa-star
 							i.fas.fa-star
 							i.far.fa-star
+				.pages.wrapper
+					ul
+						li.active
+							a(href='#') 1
+						li
+							a(href='#') 2
+						li
+							a(href='#') 3
+						li
+							a(href='#') 4
+						li
+							a(href='#') 5
+
 		footer
 			.top-section
 				.container.wrapper

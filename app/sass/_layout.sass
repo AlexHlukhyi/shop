@@ -2,6 +2,7 @@
 	height: 60px
 	background-color: black
 header
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05)
 	.contacts
 		color: white
 	a
@@ -90,6 +91,28 @@ header
 	h2
 		&:nth-child(2)
 			color: $green
+.search-results
+	padding-bottom: 15px
+	margin-bottom: 50px
+	border-bottom: 1px solid $thelightestgrey
+	p
+		font-size: 14px
+.pages
+	height: 40px
+	justify-content: center
+	border-top: 1px solid $thelightestgrey
+	border-bottom: 1px solid $thelightestgrey
+	margin-bottom: 100px
+	li
+		display: inline
+		a
+			padding: 0 5px
+			margin: 0 5px
+			color: $grey
+	.active
+		a
+			color: $yellow
+			border-bottom: 1px solid $yellow
 .static-blocks
 	background-color: $lightblue
 	flex-wrap: wrap
