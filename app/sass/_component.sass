@@ -1,0 +1,151 @@
+hr
+	height: 1px
+	width: 100%
+	color: $lightestgrey
+	background-color: $lightestgrey
+	border: none
+
+a, button
+	white-space: nowrap
+	transition: color 0.3s
+
+input
+	font-family: 'Roboto', sans-serif
+	padding: 15px 25px
+	border: 1px solid $lightestgrey
+
+.grey-button
+	font-size: 16pt
+	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+	color: $grey
+	border: $grey solid 3px
+	transition: color 0.3s, border-color 0.3s
+	padding: 10px 25px
+	&:hover
+		color: $green
+		border-color: $green
+
+.green-button
+	padding: 15px 30px
+	font-family: 'Poppins', 'Roboto', sans-serif
+	background-color: $green
+
+.form-group
+	input
+		margin-right: 10px
+
+.breadcrumbs
+	margin: 50px 0
+	list-style: none
+	li
+		display: inline
+		a
+			color: $grey
+		&:last-child
+			a
+				color: $green
+		&:not(:last-child):after
+			content: '>>'
+			margin: 0 15px
+
+.logo
+	span
+		font-family: 'Poppins Light', 'Roboto Light', sans-serif
+		color: $grey
+		font-size: 24pt
+	.bold
+		color: $green
+		font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+
+h1, h2, h3, h4, h5, h6
+	white-space: nowrap
+	margin: 0
+h2, h4, h5
+	margin: 5px 0
+h2
+	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+	font-size: 60pt
+	line-height: 60pt
+h3, h4
+	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+h3
+	font-size: 30pt
+	line-height: 30pt
+h4
+	font-size: 18pt
+	line-height: 18pt
+h5
+	font-family: 'Poppins Regular', 'Roboto', sans-serif
+	font-size: 14pt
+	font-weight: 600
+	margin-bottom: 10px
+h6
+	font-family: 'Poppins Regular', 'Roboto', sans-serif
+	font-size: 16pt
+	font-weight: 600
+	margin-bottom: 40px
+
+.big-tag-line, .middle-tag-line, .small-tag-line
+	white-space: nowrap
+
+.big-tag-line, .middle-tag-line
+	font-family: 'Poppins Regular', 'Roboto', sans-serif
+	font-size: 30pt
+	font-weight: 600
+	color: white
+
+.middle-tag-line
+	font-size: 34pt
+	transform: scaleX(0.75)
+
+.small-tag-line
+	font-family: 'Droid Serif Italic', 'Times New Roman', serif
+	font-size: 14pt
+	margin: 10px 0
+	color: $green
+
+.items
+	flex-wrap: wrap
+
+.product
+	position: relative
+	width: 300px
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+	margin: 0 auto 70px
+	img
+		width: 100%
+		height: 450px
+		background-color: $darkgrey
+		margin-bottom: 30px
+	.actions
+		display: flex
+		opacity: 0
+		transition: opacity 0.3s
+		position: absolute
+		top: 5px
+		right: 5px
+		flex-direction: column
+		.action
+			background-color: $green
+			margin: 5px
+			font-size: 18pt
+			padding: 10px
+	> a
+		color: $grey
+	.price
+		font-family: 'Droid Serif', 'Times New Roman', serif
+		font-size: 18pt
+		color: $green
+		margin-bottom: 20px
+		&:before
+			content: '$'
+	.marks
+		color: $yellow
+		i
+			&:not(:last-child)
+				margin-right: 5px
+	&:hover .actions
+		opacity: 1

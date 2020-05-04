@@ -1,0 +1,252 @@
+.contacts-bar
+	height: 60px
+	background-color: black
+header
+	.contacts
+		color: white
+	a
+		i
+			font-size: 18pt
+.contacts
+	font-family: Roboto, sans-serif
+	> div
+		margin-right: 30px
+		font-size: 18pt
+	a
+		&:hover
+			color: $green
+		div
+			font-size: 14pt
+			margin-left: 30px
+		&:not(:last-child)
+			margin-right: 30px
+.navigation-bar
+	height: 100px
+	background-color: white
+.navigation, .small-navigation
+	a
+		color: $grey
+		font-size: 16pt
+		&:hover
+			color: $green
+.navigation
+	a
+		margin: 0 25px
+.small-navigation
+	a, > div
+		&:not(:last-child)
+			margin-right: 30px
+		i
+			position: relative
+#search
+	display: none
+	input
+		border-radius: 25px
+		width: 500px
+.items-count
+	width: 20px
+	height: 20px
+	background-color: $green
+	border-radius: 50%
+	position: absolute
+	top: -14px
+	right: -12px
+	font-family: 'Poppins Regular', 'Roboto', sans-serif
+	color: white
+	padding: 4px 6px
+.carousel
+	background-color: $darkgrey
+.carousel-indicators
+	li
+		background-color: $grey
+		&:not(.active):hover
+			background-color: $lightgrey
+	.active
+		background-color: $green
+.carousel-control-prev, .carousel-control-next
+	width: 5%
+	color: $grey
+	opacity: 1
+	transition: color 0.3s
+	&:link
+		color: $grey
+	&:hover
+		color: $green
+	i
+		font-size: 20pt
+.carousel-item
+	min-height: 600px
+	height: calc(100vh - 160px)
+	max-height: 800px
+.slide-content
+	height: 100%
+	padding: 15px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	p, a
+		margin: 10px 0
+	h2
+		&:nth-child(2)
+			color: $green
+.static-blocks
+	background-color: $lightblue
+	flex-wrap: wrap
+.static-block
+	height: 200px
+	width: 25%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	i
+		font-size: 26pt
+		color: $lightgrey
+		margin: 10px 0 15px
+	h3
+		font-size: 18pt
+		line-height: 18pt
+	p
+		font-family: 'Droid Serif', 'Times New Roman', serif
+		font-size: 14pt
+		color: $lightestgrey
+.categories
+	background-color: $darkgrey
+.category
+	position: relative
+	height: 640px
+	width: 33.333%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	overflow: hidden
+	p
+		font-family: 'Roboto Light', sans-serif
+		font-size: 14pt
+		transform: scaleX(0.85)
+		letter-spacing: 5px
+	&:hover
+		background-color: $grey
+	img
+		position: absolute
+		top: calc(50% - 214px)
+		left: calc(50% - 214px)
+.best-sellers
+	max-height: 865px
+.featured-products
+	max-height: 2175px
+.featured-products, .best-sellers
+	overflow: hidden
+	.title
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		height: 210px
+		overflow: hidden
+		h3
+			margin-top: 25px
+	.items
+		flex-wrap: wrap
+		justify-content: flex-start
+.feedback
+	margin-top: 50px
+.subscription, .clients
+	height: 300px
+	width: 50%
+.subscription
+	background-color: $darkgrey
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	input
+		width: 400px
+		border: none
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		color: white
+		margin: 20px 0 35px
+.clients
+	background-color: $lightblue
+	padding: 0 50px
+	justify-content: space-around
+footer
+	p
+		white-space: nowrap
+.top-section, .bottom-section
+	.container
+		height: 60px
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+.top-section
+	border-top: $lightblue solid 1px
+	border-bottom: $lightblue solid 1px
+	a
+		color: $grey
+		&:not(:last-child)
+			margin-right: 50px
+		i
+			font-size: 16pt
+.middle-sections
+	padding: 40px 0 90px
+	.wrapper
+		align-items: flex-start
+	.section
+		width: 25%
+		display: flex
+		flex-direction: column
+		a, p
+			color: $grey
+			font-family: 'Roboto', sans-serif
+			font-size: 14px
+			&:not(:last-child)
+				margin-bottom: 20px
+		i
+			margin-right: 10px
+		a:hover
+			color: $green
+.bottom-section
+	background-color: black
+	p, .payment-method
+		color: $lightestgrey
+	.payment-method
+		&:not(:last-child)
+			margin-right: 15px
+	i
+		font-size: 30px
+
+
+.overlay
+	display: none
+	height: 100vh
+	width: 100%
+	position: fixed
+	top: 0
+	background-color: rgba(0, 0, 0, 0.75)
+	z-index: 99
+
+.menu
+	display: none
+	height: 100vh
+	width: 25%
+	min-width: 300px
+	position: fixed
+	top: 0
+	right: 0
+	background-color: white
+	z-index: 100
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+	a
+		margin: 15px
+	.navigation
+		padding-left: 15px
+		width: 100%
+		flex-direction: column
+		align-items: flex-start

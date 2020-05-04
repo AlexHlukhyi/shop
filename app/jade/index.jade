@@ -1,0 +1,492 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Main | RENOSHOPBEE ©
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="css/libs.min.css")
+		link(rel="stylesheet", href="css/main.min.css")
+		script(src="js/libs.min.js")
+		script(src="js/common.js")
+	body
+		header
+			.contacts-bar.wrapper
+				.contacts.wrapper
+					a(href='#').wrapper
+						i.fas.fa-phone-alt
+						div +1 123 456 789
+					div |
+					a(href='#').wrapper
+						i.fas.fa-envelope
+						div info@company.com
+				.contacts.wrapper
+					a(href='#')
+						i.fab.fa-facebook-f
+					a(href='#')
+						i.fab.fa-twitter
+					a(href='#')
+						i.fab.fa-instagram
+					a(href='#')
+						i.fab.fa-linkedin-in
+					a(href='#')
+						i.fab.fa-behance
+			.navigation-bar.wrapper
+				a.logo(href='#')
+					span.bold RENOSHOP
+					span BEE
+				.navigation.wrapper
+					a(href='#') HOME
+					a(href='#') WOMEN
+					a(href='#') MEN
+					a(href='#') KIDS
+					a(href='#') JEWELLERY
+					a(href='#') ACCESSORIES
+				.small-navigation.wrapper
+					#search.wrapper
+						a(href='#')#close-search-button
+							i.fas.fa-times
+						input(type='text' id='search-field' placeholder='Search...')
+					a(href='#')#search-button
+						i.fas.fa-search
+					a(href='#')
+						i.fas.fa-shopping-cart
+							.items-count 3
+					a(href='#')#menu-button
+						i.fas.fa-bars
+		#carousel.carousel.slide(data-ride='carousel')
+			ol.carousel-indicators
+				li.active(data-target='#carousel', data-slide-to='0')
+				li(data-target='#carousel', data-slide-to='1')
+				li(data-target='#carousel', data-slide-to='2')
+			.carousel-inner
+				.carousel-item.active
+					.slide-content.container
+						h2 THE BEST
+						h2 WOOCOMERCE
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur, dolor ducimus eligendi eum facere hic iste itaque labore laboriosam.
+						a(href='#')
+							.button.grey-button BUY NOW
+				.carousel-item
+					.slide-content.container
+						h2 PERFECT
+						h2 DESIGN
+						p Ab dignissimos dolor ducimus excepturi explicabo facilis ipsam iste iure magni modi molestias natus obcaecati sapiente sit tenetur ullam, ut.
+						a(href='#')
+							.button.grey-button ABOUT
+				.carousel-item
+					.slide-content.container
+						h2 INSPIRING
+						h2 QUALITY
+						p Consectetur deleniti incidunt quaerat quia ratione sequi soluta veritatis voluptate? Explicabo facilis ipsam iste iure magni modi obcaecati
+						a(href='#')
+							.button.grey-button CONTACT US
+			a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
+				i.fas.fa-chevron-circle-left
+			a.carousel-control-next(href='#carousel', role='button', data-slide='next')
+				i.fas.fa-chevron-circle-right
+		main
+			.best-sellers
+				.title
+					h3 BEST SELLERS
+					.small-tag-line The best productions from us
+				.items.wrapper
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Cruise Dual Analog
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Crown Summit Backpack
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Joust Duffle Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Voyage Yoga Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Joust Duffle Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+			.static-blocks.wrapper
+				.static-block
+					i.fas.fa-gem
+					h4 SPECIAL OFFERS
+					p Shop Big Save Big
+				.static-block
+					i.fab.fa-telegram-plane
+					h4 FREE DELIVERY
+					p On Orders Above $99
+				.static-block
+					i.fas.fa-retweet
+					h4 30 DAYS RETURN
+					p Policy We Offers
+				.static-block
+					i.fas.fa-rocket
+					h4 FASTEST SHIPPING
+					p 2 Days Express
+			.categories.wrapper
+				a.category(href='#')
+					img(src='img/category-border.png')
+					p FASHION
+					.middle-tag-line SUMMER & AUTUMN
+					p WINTER COLLECTION
+				a.category(href='#')
+					img(src='img/category-border.png')
+					p FASHION FOR MEN
+					.middle-tag-line 30% OFF
+					p WINTER COLLECTION
+				a.category(href='#')
+					img(src='img/category-border.png')
+					p FASHION
+					.middle-tag-line NEW FASHION STYLES
+					p WINTER COLLECTION
+			.featured-products
+				.title
+					h3 FEATURED PRODUCTS
+					.small-tag-line Newest trends from top brands
+				.items.wrapper
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Cruise Dual Analog
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Crown Summit Backpack
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Joust Duffle Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Voyage Yoga Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Voyage Yoga Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Cruise Dual Analog
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Crown Summit Backpack
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Joust Duffle Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Voyage Yoga Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+					.product
+						img
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+						a(href='#')
+							h5 Voyage Yoga Bag
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+			.feedback.wrapper
+				.subscription
+					.big-tag-line Get Out Special Discount
+					p Register your email for news and special offers.
+					.form-group.wrapper
+						input(type='text' id='subscription-email' placeholder='E-mail address...')
+						a(href='#')
+							.button.green-button CONTACT US
+				.clients.wrapper
+					a(href='#')
+						img(src='img/clients/client-1.png')
+					a(href='#')
+						img(src='img/clients/client-2.png')
+					a(href='#')
+						img(src='img/clients/client-3.png')
+					a(href='#')
+						img(src='img/clients/client-4.png')
+		footer
+			.top-section
+				.container.wrapper
+					p We're confident we've provided all the best for you. Stay connect with us.
+					.contacts.wrapper
+						a(href='#')
+							i.fab.fa-facebook-f
+						a(href='#')
+							i.fab.fa-twitter
+						a(href='#')
+							i.fab.fa-instagram
+						a(href='#')
+							i.fab.fa-linkedin-in
+						a(href='#')
+							i.fab.fa-behance
+			.middle-sections
+				.container.wrapper
+					.section
+						h6 INFORMATION
+						a(href='#') Delivery Information
+						a(href='#') Discount
+						a(href='#') Site Map
+						a(href='#') Privacy Policy
+						a(href='#') My Account
+					.section
+						h6 MY ACCOUNT
+						a(href='#') Sign In
+						a(href='#') View Cart
+						a(href='#') My Wishlist
+						a(href='#') Check Out
+						a(href='#') Track My Order
+					.section
+						h6 HELP
+						a(href='#') F.A.Q.
+						a(href='#') Shipping
+						a(href='#') Contact Us
+						a(href='#') Privacy Policy
+					.section
+						h6 CONTACT INFO
+						p
+							i.fas.fa-globe-americas
+							| 1234 Your Address, Country
+						p
+							i.fas.fa-phone-alt
+							| +1 123 456 789
+						p
+							i.fas.fa-envelope
+							| info@company.com
+			.bottom-section
+				.container.wrapper
+					p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
+					.payment-methods.wrapper
+						.payment-method
+							i.fab.fa-cc-visa
+						.payment-method
+							i.fab.fa-cc-paypal
+						.payment-method
+							i.fab.fa-cc-mastercard
+						.payment-method
+							i.fab.fa-cc-amazon-pay
+
+		.overlay#overlay
+		.menu#menu
+			a.logo(href='#')
+				span.bold RENOSHOP
+				span BEE
+			hr
+			.navigation.wrapper
+				a(href='#') HOME
+				a(href='#') WOMEN
+				a(href='#') MEN
+				a(href='#') KIDS
+				a(href='#') JEWELLERY
+				a(href='#') ACCESSORIES
