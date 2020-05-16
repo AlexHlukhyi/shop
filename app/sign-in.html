@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Product Name | RENOSHOPBEE ©</title>
+    <title>Sign In | RENOSHOPBEE ©</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/libs.min.css"/>
     <link rel="stylesheet" href="css/main.min.css"/>
@@ -19,14 +19,10 @@
           <div>|</div><a href="#" class="wrapper"><i class="fas fa-envelope"></i>
             <div>info@company.com</div></a>
         </div>
-        <div class="user-info wrapper"><a href="#" class="wrapper">
-            <!--<i class='fas fa-sign-in-alt'></i>--><i class="fas fa-user"></i>
-            <!--<div>Sign In</div>-->
-            <div>Alex Hlukhyi</div></a>
-          <div>|</div><a href="#" class="wrapper">
-            <!--<i class='fas fa-user-plus'></i>--><i class="fas fa-sign-out-alt"></i>
-            <!--<div>Sign Up</div>-->
-            <div>Sign Out</div></a>
+        <div class="user-info wrapper"><a href="#" class="wrapper"><i class="fas fa-sign-in-alt"></i>
+            <div>Sign In</div></a>
+          <div>|</div><a href="#" class="wrapper"><i class="fas fa-user-plus"></i>
+            <div>Sign Up</div></a>
         </div>
       </div>
       <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
@@ -39,15 +35,18 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Product Name</a></li>
-        </ul>
-      </div>
-    </main>
+    <div id="carousel" data-ride="carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+      </div><a href="#carousel" role="button" data-slide="prev" class="carousel-control-prev"><i class="fas fa-chevron-circle-left"></i></a><a href="#carousel" role="button" data-slide="next" class="carousel-control-next"><i class="fas fa-chevron-circle-right"></i></a>
+    </div>
     <footer>
       <div class="top-section">
         <div class="container wrapper">

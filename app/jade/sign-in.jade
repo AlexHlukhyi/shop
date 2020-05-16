@@ -3,7 +3,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		title Product Name | RENOSHOPBEE ©
+		title Sign In | RENOSHOPBEE ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
 		link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
@@ -22,16 +22,12 @@ html(lang="en")
 						div info@company.com
 				.user-info.wrapper
 					a(href='#').wrapper
-						//<i class='fas fa-sign-in-alt'></i>
-						i.fas.fa-user
-						//<div>Sign In</div>
-						div Alex Hlukhyi
+						i.fas.fa-sign-in-alt
+						div Sign In
 					div |
 					a(href='#').wrapper
-						//<i class='fas fa-user-plus'></i>
-						i.fas.fa-sign-out-alt
-						//<div>Sign Up</div>
-						div Sign Out
+						i.fas.fa-user-plus
+						div Sign Up
 			.navigation-bar.wrapper
 				a.logo(href='#')
 					span.bold RENOSHOP
@@ -55,15 +51,19 @@ html(lang="en")
 							.items-count 3
 					a(href='#')#menu-button
 						i.fas.fa-bars
-		main
-			.container
-				ul.breadcrumbs
-					li
-						a(href='#') Home
-					li
-						a(href='#') Shop
-					li
-						a(href='#') Product Name
+		#carousel.carousel.slide(data-ride='carousel')
+			ol.carousel-indicators
+				li.active(data-target='#carousel', data-slide-to='0')
+				li(data-target='#carousel', data-slide-to='1')
+				li(data-target='#carousel', data-slide-to='2')
+			.carousel-inner
+				.carousel-item.active
+				.carousel-item
+				.carousel-item
+			a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
+				i.fas.fa-chevron-circle-left
+			a.carousel-control-next(href='#carousel', role='button', data-slide='next')
+				i.fas.fa-chevron-circle-right
 		footer
 			.top-section
 				.container.wrapper
