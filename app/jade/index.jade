@@ -21,17 +21,17 @@ html(lang="en")
 						i.fas.fa-envelope
 						div info@company.com
 				.user-info.wrapper
-					a(href='#').wrapper
-						//<i class='fas fa-sign-in-alt'></i>
-						i.fas.fa-user
-						//<div>Sign In</div>
-						div Alex Hlukhyi
+					a(href='#' data-toggle='modal' data-target='#sign-in').wrapper
+						//<i class='fas fa-user'></i>
+						i.fas.fa-sign-in-alt
+						//<div>Alex Hlukhyi</div>
+						div Sign In
 					div |
-					a(href='#').wrapper
-						//<i class='fas fa-user-plus'></i>
-						i.fas.fa-sign-out-alt
-						//<div>Sign Up</div>
-						div Sign Out
+					a(href='#' data-toggle='modal' data-target='#sign-up').wrapper
+						//<i class='fas fa-sign-out-alt'></i>
+						i.fas.fa-user-plus
+						//<div>Sign Out</div>
+						div Sign Up
 			.navigation-bar.wrapper
 				a.logo(href='#')
 					span.bold RENOSHOP
@@ -479,6 +479,7 @@ html(lang="en")
 							i.fab.fa-cc-amazon-pay
 
 		.overlay#overlay
+
 		.menu#menu
 			a.logo(href='#')
 				span.bold RENOSHOP
@@ -491,3 +492,40 @@ html(lang="en")
 				a(href='#') KIDS
 				a(href='#') JEWELLERY
 				a(href='#') ACCESSORIES
+
+		#sign-in.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to sign in.
+						input.small-input(type='text' id='sign-in-email' placeholder='E-mail')
+						input.small-input(type='text' id='sign-in-password' placeholder='Password')
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN IN
+
+		#sign-up.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to create a new account.
+						input.small-input(type='text' id='sign-up-name' placeholder='Name and Surname')
+						input.small-input(type='text' id='sign-up-phone' placeholder='Phone')
+						input.small-input(type='text' id='sign-up-email' placeholder='E-mail')
+						input.small-input(type='text' id='sign-up-password' placeholder='Password')
+						input.small-input(type='text' id='sign-up-repeat-password' placeholder='Repeat password')
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN UP

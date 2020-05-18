@@ -9,11 +9,11 @@
 			$('#search').css({'display':'none'});
 		});
 		$('#menu-button').click(function () {
-			$('#overlay').css({'display':'block'});
+			$('#overlay').css({'visibility':'visible', 'opacity':'1'});
 			$('#menu').css({'display':'flex'});
 		});
 		$('#overlay').click(function () {
-			$('#overlay').css({'display':'none'});
+			$('#overlay').css({'visibility':'hidden', 'opacity':'0'});
 			$('#menu').css({'display':'none'});
 		});
 	});

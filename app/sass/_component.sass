@@ -172,3 +172,23 @@ h6
 				margin-right: 5px
 	&:hover .actions
 		opacity: 1
+
+.overlay
+	opacity: 0
+	visibility: hidden
+	height: 100vh
+	width: 100%
+	position: fixed
+	top: 0
+	background-color: rgba(0, 0, 0, 0.75)
+	z-index: 99
+	transition: 0.5s all
+
+.modal-body
+	display: flex
+	flex-direction: column
+	p
+		font-size: 12pt
+	> *
+		&:not(:last-child)
+			margin-bottom: 15px

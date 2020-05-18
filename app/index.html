@@ -19,14 +19,14 @@
           <div>|</div><a href="#" class="wrapper"><i class="fas fa-envelope"></i>
             <div>info@company.com</div></a>
         </div>
-        <div class="user-info wrapper"><a href="#" class="wrapper">
-            <!--<i class='fas fa-sign-in-alt'></i>--><i class="fas fa-user"></i>
-            <!--<div>Sign In</div>-->
-            <div>Alex Hlukhyi</div></a>
-          <div>|</div><a href="#" class="wrapper">
-            <!--<i class='fas fa-user-plus'></i>--><i class="fas fa-sign-out-alt"></i>
-            <!--<div>Sign Up</div>-->
-            <div>Sign Out</div></a>
+        <div class="user-info wrapper"><a href="#" data-toggle="modal" data-target="#sign-in" class="wrapper">
+            <!--<i class='fas fa-user'></i>--><i class="fas fa-sign-in-alt"></i>
+            <!--<div>Alex Hlukhyi</div>-->
+            <div>Sign In</div></a>
+          <div>|</div><a href="#" data-toggle="modal" data-target="#sign-up" class="wrapper">
+            <!--<i class='fas fa-sign-out-alt'></i>--><i class="fas fa-user-plus"></i>
+            <!--<div>Sign Out</div>-->
+            <div>Sign Up</div></a>
         </div>
       </div>
       <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
@@ -261,6 +261,41 @@
     <div id="menu" class="menu"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
       <hr/>
       <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
+    </div>
+    <div id="sign-in" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p>Enter your credentials to sign in.</p>
+            <input type="text" id="sign-in-email" placeholder="E-mail" class="small-input"/>
+            <input type="text" id="sign-in-password" placeholder="Password" class="small-input"/>
+          </div>
+          <div class="modal-footer"><a href="#">
+              <div class="button green-button small-button">SIGN IN</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="sign-up" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p>Enter your credentials to create a new account.</p>
+            <input type="text" id="sign-up-name" placeholder="Name and Surname" class="small-input"/>
+            <input type="text" id="sign-up-phone" placeholder="Phone" class="small-input"/>
+            <input type="text" id="sign-up-email" placeholder="E-mail" class="small-input"/>
+            <input type="text" id="sign-up-password" placeholder="Password" class="small-input"/>
+            <input type="text" id="sign-up-repeat-password" placeholder="Repeat password" class="small-input"/>
+          </div>
+          <div class="modal-footer"><a href="#">
+              <div class="button green-button small-button">SIGN UP</div></a></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
