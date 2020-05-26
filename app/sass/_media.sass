@@ -25,8 +25,16 @@
 		width: 800px
 	.static-block
 		width: 50%
+	footer
+		.top-section, .bottom-section
+			> .wrapper
+				justify-content: center
+
 
 @media (max-width: 992px)
+	.contacts-bar
+		.user-info
+			display: none
 	.container
 		width: 750px
 	.items
@@ -35,6 +43,10 @@
 @media (max-width: 825px)
 	.container
 		width: 600px
+	.product.large
+		justify-content: center
+		.product-info
+			width: 100%
 
 @media (max-width: 625px)
 	.static-block

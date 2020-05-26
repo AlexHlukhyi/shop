@@ -10,16 +10,26 @@ a, button
 	transition: color 0.3s
 
 select
+	font-family: 'Roboto', sans-serif
 	color: $grey
+
+select.medium
+	border: 1px solid $thelightestgrey
+	padding: 11px 21px 12px
 
 input
 	font-family: 'Roboto', sans-serif
-	padding: 15px 25px
-	border: 1px solid $lightestgrey
-
-.small-input
-	padding: 5px 15px
 	border: 1px solid $thelightestgrey
+
+input.big
+	padding: 15px 25px
+
+input.medium
+	padding: 10px 20px
+
+input.small
+	padding: 5px 15px
+
 
 .grey-button
 	font-size: 16pt
@@ -50,6 +60,7 @@ input
 .form-group
 	input
 		margin-right: 10px
+
 
 .breadcrumbs
 	margin: 50px 0
@@ -125,38 +136,45 @@ h6
 	flex-wrap: wrap
 	margin: 0 -10px
 
-.big-image
-	width: 300px
-	height: 450px
+.small-image, .middle-image, .big-image
+	background-color: $darkgrey
+	margin-bottom: 30px
 
-.middle-image
+.small-image
 	width: 270px
 	height: 400px
 
-.product
-	position: relative
-	display: flex
-	flex-direction: column
-	align-items: flex-start
-	justify-content: center
-	margin: 0 auto 70px
+.middle-image
+	width: 300px
+	height: 450px
+
+.big-image
+	width: 450px
+	height: 600px
+
+.thumbnails
+	flex-wrap: wrap
+	width: 100%
 	img
 		background-color: $darkgrey
-		margin-bottom: 30px
+		width: 90px
+		height: 100px
+		transition: box-shadow 0.5s
+	a:hover img
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+
+// Product Styling
+
+.product
+	display: flex
 	.actions
 		display: flex
-		opacity: 0
-		transition: opacity 0.3s
-		position: absolute
-		top: 5px
-		right: 5px
-		flex-direction: column
 		.action
 			background-color: $green
 			margin: 5px
 			font-size: 18pt
 			padding: 10px
-	> a
+	h5
 		color: $grey
 	.price
 		font-family: 'Droid Serif', 'Times New Roman', serif
@@ -170,8 +188,54 @@ h6
 		i
 			&:not(:last-child)
 				margin-right: 5px
+
+.product.small
+	position: relative
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+	margin: 0 auto 70px
+	.actions
+		opacity: 0
+		transition: opacity 0.3s
+		position: absolute
+		top: 5px
+		right: 5px
+		flex-direction: column
 	&:hover .actions
 		opacity: 1
+
+.product.large
+	flex-direction: row
+	justify-items: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+	> div
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-bottom: 60px
+	.product-images
+		margin-right: 40px
+	.product-info
+		min-width: 210px
+		width: calc(100% - 490px)
+		padding: 10px
+	.product-description, .product-reviews
+		width: 100%
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		margin: 30px 0
+		text-align: justify
+	.properties
+		display: flex
+		flex-wrap: wrap
+		margin: 15px 0
+		> *
+			margin: 5px 15px 5px 0
+	.actions
+		margin: 0 -5px
 
 .overlay
 	opacity: 0

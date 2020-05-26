@@ -203,14 +203,18 @@ footer
 	p
 		white-space: nowrap
 .top-section, .bottom-section
-	.container
-		height: 60px
+	> .wrapper
+		flex-wrap: wrap
+		> .wrapper, > div
+			height: 60px
 	p
 		font-family: 'Roboto', sans-serif
 		font-size: 14px
 .top-section
 	border-top: $lightblue solid 1px
 	border-bottom: $lightblue solid 1px
+	.contacts
+		margin-left: 15px
 	a
 		color: $grey
 		&:not(:last-child)
@@ -237,6 +241,8 @@ footer
 			color: $green
 .bottom-section
 	background-color: black
+	.payment-methods
+		margin-left: 15px
 	p, .payment-method
 		color: $lightestgrey
 	.payment-method

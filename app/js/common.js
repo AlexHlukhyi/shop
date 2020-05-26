@@ -1,4 +1,4 @@
-(function(params) {
+(function() {
 	$(document).ready(function() {
 		$('#search-button').click(function () {
 			$('.navigation').css({'display':'none'});

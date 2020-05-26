@@ -64,10 +64,60 @@ html(lang="en")
 						a(href='#') Shop
 					li
 						a(href='#') Product Name
+				.product.large
+					.product-images
+						img.big-image
+						.thumbnails.wrapper
+							a(href='#')
+								img
+							a(href='#')
+								img
+							a(href='#')
+								img
+							a(href='#')
+								img
+					.product-info
+						a(href='#')
+							h5 Cruise Analog Dual
+						.price 250.00
+						.marks.wrapper
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.far.fa-star
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto corporis ex fugit illum perferendis, sunt vitae? Dolor iste nobis quae repudiandae sequi similique sint! Excepturi explicabo laboriosam quae voluptatum!
+						hr
+						.properties
+							select.medium
+								option(disabled selected) Select Size
+								option XS
+								option S
+								option M
+								option L
+								option XL
+								option XXL
+							select.medium
+								option(disabled selected) Select Color
+								option Red
+								option Black
+								option White
+							input.medium(type='number' placeholder='Select Quantity')
+						.actions
+							a.action(href='#')
+								i.fas.fa-shopping-cart
+							a.action(href='#')
+								i.fas.fa-heart
+							a.action(href='#')
+								i.fas.fa-retweet
+					.product-description
+						h5 Description
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut, eaque eos nihil reprehenderit vel. Accusantium aliquid expedita, harum ipsam itaque obcaecati provident quos repellat! Ducimus nihil nulla obcaecati praesentium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut, eaque eos nihil reprehenderit vel. Accusantium aliquid expedita, harum ipsam itaque obcaecati provident quos repellat! Ducimus nihil nulla obcaecati praesentium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut, eaque eos nihil reprehenderit vel. Accusantium aliquid expedita, harum ipsam itaque obcaecati provident quos repellat! Ducimus nihil nulla obcaecati praesentium!
 		footer
 			.top-section
 				.container.wrapper
-					p We're confident we've provided all the best for you. Stay connect with us.
+					.slogan
+						p We're confident we've provided all the best for you. Stay connect with us.
 					.contacts.wrapper
 						a(href='#')
 							i.fab.fa-facebook-f
@@ -114,7 +164,8 @@ html(lang="en")
 							| info@company.com
 			.bottom-section
 				.container.wrapper
-					p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
+					.copyright
+						p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
 					.payment-methods.wrapper
 						.payment-method
 							i.fab.fa-cc-visa
