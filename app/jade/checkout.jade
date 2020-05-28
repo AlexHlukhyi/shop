@@ -47,7 +47,7 @@ html(lang="en")
 					#search.wrapper
 						a(href='#')#close-search-button
 							i.fas.fa-times
-						input(type='text' id='search-field' placeholder='Search...')
+						input.small(type='text' id='search-field' placeholder='Search...')
 					a(href='#')#search-button
 						i.fas.fa-search
 					a(href='#')
@@ -64,10 +64,39 @@ html(lang="en")
 						a(href='#') Shop
 					li
 						a(href='#') Checkout
+				.order-details
+					.section
+						h5 BILLING DETAILS
+						p First Name and Last Name
+						.form-group.wrapper
+							input.small(type='text' id='first-name')
+							input.small(type='text' id='last-name')
+						select.medium
+							option(disabled selected) Country
+							option Ukraine
+							option USA
+							option Canada
+						p Company Name
+						input.small(type='text' id='company' placeholder='First Name')
+						p Address
+						input.small(type='text' id='address' placeholder='Street address')
+						p Postcode/Zip
+						input.small(type='number' id='postcode' placeholder='Postcode/Zip')
+						p Town/City
+						input.small(type='text' id='town' placeholder='Town/City')
+						p E-mail Address
+						input.small(type='text' id='e-mail')
+						p Phone
+						input.small(type='text' id='phone')
+					.sectiom
+						// finish here
+				.order-controls
+					button.green-button.small-button PROCEED TO CHECKOUT
 		footer
 			.top-section
 				.container.wrapper
-					p We're confident we've provided all the best for you. Stay connect with us.
+					.wrapper
+						p We're confident we've provided all the best for you. Stay connect with us.
 					.contacts.wrapper
 						a(href='#')
 							i.fab.fa-facebook-f
@@ -114,7 +143,8 @@ html(lang="en")
 							| info@company.com
 			.bottom-section
 				.container.wrapper
-					p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
+					.wrapper
+						p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
 					.payment-methods.wrapper
 						.payment-method
 							i.fab.fa-cc-visa

@@ -47,7 +47,7 @@ html(lang="en")
 					#search.wrapper
 						a(href='#')#close-search-button
 							i.fas.fa-times
-						input(type='text' id='search-field' placeholder='Search...')
+						input.small(type='text' id='search-field' placeholder='Search...')
 					a(href='#')#search-button
 						i.fas.fa-search
 					a(href='#')
@@ -63,7 +63,7 @@ html(lang="en")
 					li
 						a(href='#') Catalog
 				.catalog.wrapper
-					.filters
+					.filters#filters
 						.categories-filter
 							h5 CATEGORIES
 							ul
@@ -358,7 +358,8 @@ html(lang="en")
 		footer
 			.top-section
 				.container.wrapper
-					p We're confident we've provided all the best for you. Stay connect with us.
+					.wrapper
+						p We're confident we've provided all the best for you. Stay connect with us.
 					.contacts.wrapper
 						a(href='#')
 							i.fab.fa-facebook-f
@@ -405,7 +406,8 @@ html(lang="en")
 							| info@company.com
 			.bottom-section
 				.container.wrapper
-					p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
+					.wrapper
+						p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
 					.payment-methods.wrapper
 						.payment-method
 							i.fab.fa-cc-visa
@@ -429,3 +431,5 @@ html(lang="en")
 				a(href='#') KIDS
 				a(href='#') JEWELLERY
 				a(href='#') ACCESSORIES
+		.filters-button#filters-button
+			i.fas.fa-caret-right

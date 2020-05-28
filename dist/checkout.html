@@ -33,7 +33,7 @@
         <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
         <div class="small-navigation wrapper">
           <div id="search" class="wrapper"><a href="#" id="close-search-button"><i class="fas fa-times"></i></a>
-            <input type="text" id="search-field" placeholder="Search..."/>
+            <input type="text" id="search-field" placeholder="Search..." class="small"/>
           </div><a href="#" id="search-button"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-shopping-cart">
               <div class="items-count">3</div></i></a><a href="#" id="menu-button"><i class="fas fa-bars"></i></a>
         </div>
@@ -46,12 +46,48 @@
           <li><a href="#">Shop</a></li>
           <li><a href="#">Checkout</a></li>
         </ul>
+        <div class="order-details">
+          <div class="section">
+            <h5>BILLING DETAILS</h5>
+            <p>First Name and Last Name</p>
+            <div class="form-group wrapper">
+              <input type="text" id="first-name" class="small"/>
+              <input type="text" id="last-name" class="small"/>
+            </div>
+            <select class="medium">
+              <option disabled="disabled" selected="selected">Country</option>
+              <option>Ukraine</option>
+              <option>USA</option>
+              <option>Canada</option>
+            </select>
+            <p>Company Name</p>
+            <input type="text" id="company" placeholder="First Name" class="small"/>
+            <p>Address</p>
+            <input type="text" id="address" placeholder="Street address" class="small"/>
+            <p>Postcode/Zip</p>
+            <input type="number" id="postcode" placeholder="Postcode/Zip" class="small"/>
+            <p>Town/City</p>
+            <input type="text" id="town" placeholder="Town/City" class="small"/>
+            <p>E-mail Address</p>
+            <input type="text" id="e-mail" class="small"/>
+            <p>Phone</p>
+            <input type="text" id="phone" class="small"/>
+          </div>
+          <div class="sectiom">
+            <!-- finish here-->
+          </div>
+        </div>
+        <div class="order-controls">
+          <button class="green-button small-button">PROCEED TO CHECKOUT</button>
+        </div>
       </div>
     </main>
     <footer>
       <div class="top-section">
         <div class="container wrapper">
-          <p>We're confident we've provided all the best for you. Stay connect with us.</p>
+          <div class="wrapper">
+            <p>We're confident we've provided all the best for you. Stay connect with us.</p>
+          </div>
           <div class="contacts wrapper"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
         </div>
       </div>
@@ -76,7 +112,9 @@
       </div>
       <div class="bottom-section">
         <div class="container wrapper">
-          <p>Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi</p>
+          <div class="wrapper">
+            <p>Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi</p>
+          </div>
           <div class="payment-methods wrapper">
             <div class="payment-method"><i class="fab fa-cc-visa"></i></div>
             <div class="payment-method"><i class="fab fa-cc-paypal"></i></div>

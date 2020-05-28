@@ -162,7 +162,9 @@ header
 	max-height: 865px
 .featured-products
 	max-height: 2175px
-.featured-products, .best-sellers
+.related-products
+	max-height: 817px
+.featured-products, .best-sellers, .related-products
 	overflow: hidden
 	.title
 		display: flex
@@ -173,9 +175,10 @@ header
 		overflow: hidden
 		h3
 			margin-top: 25px
-	.items
-		flex-wrap: wrap
-		justify-content: flex-start
+.items
+	flex-wrap: wrap
+	justify-content: flex-start
+	margin: 0 -10px
 .feedback
 	margin-top: 50px
 .subscription, .clients
@@ -187,9 +190,10 @@ header
 	flex-direction: column
 	justify-content: center
 	align-items: center
+	.form-group
+		width: 60%
 	input
-		width: 400px
-		border: none
+		border: 1px solid white
 	p
 		font-family: 'Roboto', sans-serif
 		font-size: 14px
@@ -252,12 +256,15 @@ footer
 		font-size: 30px
 .catalog
 	align-items: flex-start
+	margin-bottom: 60px
 .filters
 	width: 270px
 	h5
 		margin: 25px 0
 	hr
 		margin: 25px 0
+	&.active
+		left: 0
 .categories-filter, .color-filter
 	ul
 		list-style: square inside
@@ -271,23 +278,63 @@ footer
 .content
 	width: calc(100% - 290px)
 
+.cart
+	margin-bottom: 65px
+	tr:last-child
+		td
+			padding: 15px
+			text-align: right
+
+.order-details
+	margin: 0 -15px
+	flex-wrap: wrap
+	.section
+		width: calc(50% - 30px)
+		margin: 15px
+		h5
+			margin: 30px 0 15px
+		p
+			font-size: 14px
+			margin: 15px 0 5px
+		.form-group
+			justify-content: flex-start
+		> input, > select
+			width: 100%
+		table
+			p
+				margin: 5px
+.order-controls
+	margin-bottom: 185px
+.filters, .menu
+	background-color: white
+	transition: all 0.5s
+	&.active
+		opacity: 1
+		visibility: visible
+
 .menu
-	display: none
+	opacity: 0
+	visibility: hidden
 	height: 100vh
-	width: 25%
-	min-width: 300px
+	width: 300px
 	position: fixed
 	top: 0
-	right: 0
-	background-color: white
-	z-index: 100
+	right: -300px
 	flex-direction: column
 	align-items: center
 	justify-content: flex-start
-	a
-		margin: 15px
+	z-index: 99
+	span
+		display: inline-block
+		margin-top: 10px
+		&:first-child
+			margin-left: 15px
+	a:not(.logo)
+		margin: 5px
 	.navigation
 		padding-left: 15px
 		width: 100%
 		flex-direction: column
 		align-items: flex-start
+	&.active
+		right: 0

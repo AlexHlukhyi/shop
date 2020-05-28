@@ -9,6 +9,9 @@ a, button
 	white-space: nowrap
 	transition: color 0.3s
 
+button
+	box-sizing: border-box
+
 select
 	font-family: 'Roboto', sans-serif
 	color: $grey
@@ -28,8 +31,22 @@ input.medium
 	padding: 10px 20px
 
 input.small
-	padding: 5px 15px
+	padding: 9px
 
+textarea
+	border: 1px solid $thelightestgrey
+	margin-bottom: 15px
+	width: 100%
+	resize: none
+	padding: 5px
+	min-height: 150px
+
+.delete-button
+	color: black
+	i
+		font-size: 16pt
+	&:hover
+		color: $green
 
 .grey-button
 	font-size: 16pt
@@ -45,11 +62,13 @@ input.small
 .white-button
 	padding: 15px 30px
 	border: 1px solid $thelightestgrey
+	color: black
 
 .green-button
 	padding: 15px 30px
 	font-family: 'Poppins', 'Roboto', sans-serif
 	background-color: $green
+	border: 1px solid $green
 	color: white
 	i
 		color: white
@@ -59,6 +78,7 @@ input.small
 
 .form-group
 	input
+		flex-grow: 1
 		margin-right: 10px
 
 
@@ -132,13 +152,14 @@ h6
 	margin: 10px 0
 	color: $green
 
-.items
-	flex-wrap: wrap
-	margin: 0 -10px
-
 .small-image, .middle-image, .big-image
 	background-color: $darkgrey
 	margin-bottom: 30px
+
+.thumbnail
+	background-color: $darkgrey
+	width: 80px
+	height: 80px
 
 .small-image
 	width: 270px
@@ -176,18 +197,23 @@ h6
 			padding: 10px
 	h5
 		color: $grey
-	.price
-		font-family: 'Droid Serif', 'Times New Roman', serif
-		font-size: 18pt
-		color: $green
-		margin-bottom: 20px
-		&:before
-			content: '$'
-	.marks
-		color: $yellow
-		i
-			&:not(:last-child)
-				margin-right: 5px
+.price
+	font-family: 'Droid Serif', 'Times New Roman', serif
+	font-size: 18pt
+	color: $green
+	margin-bottom: 20px
+	&:before
+		content: '$'
+.marks
+	color: $yellow
+	i
+		&:not(:last-child)
+			margin-right: 5px
+
+.date
+	font-family: 'Droid Serif Italic', 'Times New Roman', serif
+	font-size: 10pt
+	color: $lightestgrey
 
 .product.small
 	position: relative
@@ -210,32 +236,89 @@ h6
 	justify-items: flex-start
 	align-items: flex-start
 	flex-wrap: wrap
-	> div
+	> div:not(.related-products)
 		display: flex
 		flex-direction: column
 		align-items: flex-start
-		margin-bottom: 60px
-	.product-images
-		margin-right: 40px
-	.product-info
-		min-width: 210px
-		width: calc(100% - 490px)
-		padding: 10px
-	.product-description, .product-reviews
-		width: 100%
 	p
 		font-family: 'Roboto', sans-serif
 		font-size: 14px
 		margin: 30px 0
 		text-align: justify
-	.properties
-		display: flex
-		flex-wrap: wrap
-		margin: 15px 0
-		> *
-			margin: 5px 15px 5px 0
 	.actions
 		margin: 0 -5px
+
+.product-images, .product-info
+	margin-bottom: 60px
+.product-images
+	margin-right: 40px
+.product-info
+	min-width: 210px
+	width: calc(100% - 490px)
+	padding: 10px
+.product-description, .product-reviews
+	margin: 20px 0
+	width: 100%
+.reviews, .review
+	width: 100%
+.reviews
+	margin-top: 15px
+	background-color: $thelightestgrey
+	flex-direction: column
+	align-items: flex-start
+	> p
+		margin: 15px !important
+.reviews, .review, .new-review
+	padding: 15px
+.review
+	justify-content: flex-start
+	margin-bottom: 15px
+	img
+		align-self: flex-start
+.new-review
+	flex-direction: column
+	align-items: flex-start
+	width: 100%
+	p
+		margin: 5px 0 !important
+	button
+		align-self: flex-end
+.review-body
+	background-color: white
+	width: calc(100% - 95px)
+	margin-left: 15px
+	padding: 30px 20px 10px
+	flex-direction: column
+	align-items: flex-start
+	h5
+		margin: 15px 0
+	p
+		margin: 15px 0 !important
+	.marks
+		max-width: 100px
+.related-products
+	width: 100%
+	margin-bottom: 60px
+.properties
+	display: flex
+	flex-wrap: wrap
+	margin: 15px 0
+	> *
+		margin: 5px 15px 5px 0
+
+table
+	width: 100%
+th, td
+	border: 1px solid $thelightestgrey
+	padding: 15px 5px
+	text-align: center
+	white-space: nowrap
+	img
+		margin-right: 15px
+	button
+		margin-left: 15px
+	input
+		width: 50px
 
 .overlay
 	opacity: 0
@@ -247,6 +330,9 @@ h6
 	background-color: rgba(0, 0, 0, 0.75)
 	z-index: 99
 	transition: 0.5s all
+	&.active
+		opacity: 1
+		visibility: visible
 
 .modal-body
 	display: flex
@@ -256,3 +342,17 @@ h6
 	> *
 		&:not(:last-child)
 			margin-bottom: 15px
+
+.filters-button
+	display: none
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)
+	position: fixed
+	top: 50%
+	left: 0
+	transform: translate(-50%, -50%)
+	color: green
+	background-color: white
+	border-radius: 50%
+	padding: 10px 15px 10px 30px
+	i
+		font-size: 36pt

@@ -33,7 +33,7 @@
         <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
         <div class="small-navigation wrapper">
           <div id="search" class="wrapper"><a href="#" id="close-search-button"><i class="fas fa-times"></i></a>
-            <input type="text" id="search-field" placeholder="Search..."/>
+            <input type="text" id="search-field" placeholder="Search..." class="small"/>
           </div><a href="#" id="search-button"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-shopping-cart">
               <div class="items-count">3</div></i></a><a href="#" id="menu-button"><i class="fas fa-bars"></i></a>
         </div>
@@ -46,7 +46,7 @@
           <li><a href="#">Catalog</a></li>
         </ul>
         <div class="catalog wrapper">
-          <div class="filters">
+          <div id="filters" class="filters">
             <div class="categories-filter">
               <h5>CATEGORIES</h5>
               <ul>
@@ -189,7 +189,9 @@
     <footer>
       <div class="top-section">
         <div class="container wrapper">
-          <p>We're confident we've provided all the best for you. Stay connect with us.</p>
+          <div class="wrapper">
+            <p>We're confident we've provided all the best for you. Stay connect with us.</p>
+          </div>
           <div class="contacts wrapper"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
         </div>
       </div>
@@ -214,7 +216,9 @@
       </div>
       <div class="bottom-section">
         <div class="container wrapper">
-          <p>Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi</p>
+          <div class="wrapper">
+            <p>Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi</p>
+          </div>
           <div class="payment-methods wrapper">
             <div class="payment-method"><i class="fab fa-cc-visa"></i></div>
             <div class="payment-method"><i class="fab fa-cc-paypal"></i></div>
@@ -229,5 +233,6 @@
       <hr/>
       <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
     </div>
+    <div id="filters-button" class="filters-button"><i class="fas fa-caret-right"></i></div>
   </body>
 </html>

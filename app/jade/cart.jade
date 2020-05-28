@@ -47,7 +47,7 @@ html(lang="en")
 					#search.wrapper
 						a(href='#')#close-search-button
 							i.fas.fa-times
-						input(type='text' id='search-field' placeholder='Search...')
+						input.small(type='text' id='search-field' placeholder='Search...')
 					a(href='#')#search-button
 						i.fas.fa-search
 					a(href='#')
@@ -64,10 +64,122 @@ html(lang="en")
 						a(href='#') Shop
 					li
 						a(href='#') Cart
+				table.cart
+					thead
+						tr
+							th Products
+							th Color & Size
+							th Quantity
+							th Price
+							th Total
+					tbody
+						tr
+							th
+								img.thumbnail
+								| Casual Jacket
+							td
+								div Size: XL
+								div Color: Black
+							td
+								input.small(type='number' value=1)
+							td $120
+							td
+								| $120
+								button.delete-button
+									i.far.fa-times-circle
+						tr
+							th
+								img.thumbnail
+								| Casual Jacket
+							td
+								div Size: XL
+								div Color: Black
+							td
+								input.small(type='number' value=1)
+							td $120
+							td
+								| $120
+								button.delete-button
+									i.far.fa-times-circle
+						tr
+							th
+								img.thumbnail
+								| Casual Jacket
+							td
+								div Size: XL
+								div Color: Black
+							td
+								input.small(type='number' value=1)
+							td $120
+							td
+								| $120
+								button.delete-button
+									i.far.fa-times-circle
+						tr
+							td(colspan=5)
+								button.white-button.small-button UPDATE CART
+								button.green-button.small-button CONTINUE SHOPPING
+				.order-details.wrapper
+					.section
+						h5 USE COUPON CODE
+						p Enter your coupon code here
+						.form-group.wrapper
+							input.small(type='text' id='coupon-code' placeholder='Coupon code')
+							button.green-button.small-button APPLY
+					.section
+						h5 USE GIFT VOUCHER
+						p Enter your gift voucher code here
+						.form-group.wrapper
+							input.small(type='text' placeholder='Gift voucher code')
+							button.green-button.small-button APPLY
+					.section
+						h5 SHIPPING AVAILABILITY
+						p Select country
+						select.medium
+							option(disabled selected) Country
+							option Ukraine
+							option USA
+							option Canada
+						p Select state
+						select.medium
+							option(disabled selected) State
+							option Option 1
+							option Option 2
+							option Option 3
+						p Postcode/Zip
+						input.small(type='number' placeholder='Postcode/Zip')
+					.section
+						h5 SHIPPING CART CALCULATION
+						// do it with blocks
+						table
+							tr
+								td
+									p Subtotal
+								td
+									p $450
+							tr
+								td
+									p Coupon
+								td
+									p -$50
+							tr
+								td
+									p Shipping
+								td
+									p Free Shipping
+							tr
+								td
+									p Total
+								td
+									p $400
+				.order-controls.wrapper
+					button.white-button.small-button UPDATE TOTALS
+					button.green-button.small-button PROCEED TO CHECKOUT
 		footer
 			.top-section
 				.container.wrapper
-					p We're confident we've provided all the best for you. Stay connect with us.
+					.wrapper
+						p We're confident we've provided all the best for you. Stay connect with us.
 					.contacts.wrapper
 						a(href='#')
 							i.fab.fa-facebook-f
@@ -114,7 +226,8 @@ html(lang="en")
 							| info@company.com
 			.bottom-section
 				.container.wrapper
-					p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
+					.wrapper
+						p Copyright 2020 RenoshopBee all right reserved - Developed by Oleksandr Hlukhyi
 					.payment-methods.wrapper
 						.payment-method
 							i.fab.fa-cc-visa
