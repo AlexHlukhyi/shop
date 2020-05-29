@@ -47,11 +47,7 @@ html(lang="en")
 					a(href='#') JEWELLERY
 					a(href='#') ACCESSORIES
 				.small-navigation.wrapper
-					#search.wrapper
-						a(href='#')#close-search-button
-							i.fas.fa-times
-						input.small(type='text' id='search-field' placeholder='Search...')
-					a(href='#')#search-button
+					a(href='#' data-toggle='modal' data-target='#search')
 						i.fas.fa-search
 					a(href='#')
 						i.fas.fa-shopping-cart
@@ -69,22 +65,19 @@ html(lang="en")
 						h2 THE BEST
 						h2 WOOCOMERCE
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur, dolor ducimus eligendi eum facere hic iste itaque labore laboriosam.
-						a(href='#')
-							.button.grey-button BUY NOW
+						button.grey BUY NOW
 				.carousel-item
 					.slide-content.container
 						h2 PERFECT
 						h2 DESIGN
 						p Ab dignissimos dolor ducimus excepturi explicabo facilis ipsam iste iure magni modi molestias natus obcaecati sapiente sit tenetur ullam, ut.
-						a(href='#')
-							.button.grey-button ABOUT
+						button.grey ABOUT
 				.carousel-item
 					.slide-content.container
 						h2 INSPIRING
 						h2 QUALITY
 						p Consectetur deleniti incidunt quaerat quia ratione sequi soluta veritatis voluptate? Explicabo facilis ipsam iste iure magni modi obcaecati
-						a(href='#')
-							.button.grey-button CONTACT US
+						button.grey CONTACT US
 			a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
 				i.fas.fa-chevron-circle-left
 			a.carousel-control-next(href='#carousel', role='button', data-slide='next')
@@ -96,7 +89,7 @@ html(lang="en")
 					.small-tag-line The best productions from us
 				.items.wrapper
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -114,7 +107,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -132,7 +125,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -150,7 +143,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -168,7 +161,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -224,7 +217,7 @@ html(lang="en")
 					.small-tag-line Newest trends from top brands
 				.items.wrapper
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -242,7 +235,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -260,7 +253,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -278,7 +271,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -296,7 +289,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -314,7 +307,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -332,7 +325,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -350,7 +343,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -368,7 +361,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -386,7 +379,7 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.middle-image
+						img
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -540,3 +533,19 @@ html(lang="en")
 					.modal-footer
 						a(href='#')
 							.button.green-button.small-button SIGN UP
+
+		#search.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your search query here...
+						input.small(type='text' id='search-query')
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SEARCH

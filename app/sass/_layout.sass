@@ -41,11 +41,6 @@ header
 			margin-right: 30px
 		i
 			position: relative
-#search
-	display: none
-	input
-		border-radius: 25px
-		width: 500px
 .items-count
 	width: 20px
 	height: 20px
@@ -67,7 +62,7 @@ header
 	.active
 		background-color: $green
 .carousel-control-prev, .carousel-control-next
-	width: 5%
+	width: 75px
 	color: $grey
 	opacity: 1
 	transition: color 0.3s
@@ -158,14 +153,7 @@ header
 		position: absolute
 		top: calc(50% - 214px)
 		left: calc(50% - 214px)
-.best-sellers
-	max-height: 865px
-.featured-products
-	max-height: 2175px
-.related-products
-	max-height: 817px
 .featured-products, .best-sellers, .related-products
-	overflow: hidden
 	.title
 		display: flex
 		flex-direction: column
@@ -178,6 +166,8 @@ header
 .items
 	flex-wrap: wrap
 	justify-content: flex-start
+	align-items: flex-start
+	overflow: hidden
 	margin: 0 -10px
 .feedback
 	margin-top: 50px
@@ -347,7 +337,7 @@ header
 	opacity: 0
 	visibility: hidden
 	height: 100vh
-	width: 300px
+	width: 250px
 	position: fixed
 	top: 0
 	right: -300px

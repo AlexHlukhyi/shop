@@ -58,11 +58,11 @@ button.delete
 		color: $green
 
 a, button
-	white-space: nowrap
 	transition: color 0.3s
 
 button
 	box-sizing: border-box
+	white-space: nowrap
 
 button.grey
 	font-size: 16pt
@@ -162,14 +162,12 @@ button.small
 	display: none
 
 h1, h2, h3, h4, h5, h6
-	white-space: nowrap
 	margin: 0
 h2, h4, h5
 	margin: 5px 0
 h2
 	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
 	font-size: 60pt
-	line-height: 60pt
 h3, h4
 	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
 h3
@@ -208,42 +206,19 @@ h6
 	margin: 10px 0
 	color: $green
 
-.small-image, .middle-image, .big-image
-	background-color: $darkgrey
-	margin-bottom: 30px
-
-.thumbnail
-	background-color: $darkgrey
-	width: 80px
-	height: 80px
-
 .small-image
 	width: 270px
 	height: 400px
-
-.middle-image
-	width: 300px
-	height: 450px
 
 .big-image
 	width: 450px
 	height: 600px
 
-.thumbnails
-	flex-wrap: wrap
-	width: 100%
-	img
-		background-color: $darkgrey
-		width: 90px
-		height: 100px
-		transition: box-shadow 0.5s
-	a:hover img
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
-
-// Product Styling
-
 .product
 	display: flex
+	img
+		background-color: $darkgrey
+		margin-bottom: 30px
 	.actions
 		display: flex
 		.action
@@ -272,11 +247,15 @@ h6
 	color: $lightestgrey
 
 .product.small
+	width: 270px
 	position: relative
 	flex-direction: column
 	align-items: flex-start
 	justify-content: center
 	margin: 0 auto 70px
+	img
+		width: 100%
+		height: 400px
 	.actions
 		opacity: 0
 		transition: opacity 0.3s
@@ -292,6 +271,14 @@ h6
 	justify-items: flex-start
 	align-items: flex-start
 	flex-wrap: wrap
+	.product-images
+		> img
+			width: 450px
+			height: 600px
+	img.thumbnail
+		background-color: $darkgrey
+		width: 80px
+		height: 80px
 	> div:not(.related-products)
 		display: flex
 		flex-direction: column
@@ -303,6 +290,16 @@ h6
 		text-align: justify
 	.actions
 		margin: 0 -5px
+	.thumbnails
+		flex-wrap: wrap
+		width: 100%
+		img
+			background-color: $darkgrey
+			width: 90px
+			height: 100px
+			transition: box-shadow 0.5s
+		a:hover img
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
 
 .product-images, .product-info
 	margin-bottom: 60px
