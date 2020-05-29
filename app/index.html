@@ -29,7 +29,7 @@
             <div>Sign Up</div></a>
         </div>
       </div>
-      <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+      <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a><a href="#" class="logo short"><span class="bold">R</span><span>BEE</span></a>
         <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
         <div class="small-navigation wrapper">
           <div id="search" class="wrapper"><a href="#" id="close-search-button"><i class="fas fa-times"></i></a>
@@ -212,8 +212,8 @@
           <div class="big-tag-line">Get Out Special Discount</div>
           <p>Register your email for news and special offers.</p>
           <div class="form-group wrapper">
-            <input type="text" id="subscription-email" placeholder="E-mail address..." class="big"/><a href="#">
-              <div class="button green-button">CONTACT US</div></a>
+            <input type="text" id="subscription-email" placeholder="E-mail address..." class="big"/>
+            <button class="button green-button">CONTACT US</button>
           </div>
         </div>
         <div class="clients wrapper"><a href="#"><img src="img/clients/client-1.png"/></a><a href="#"><img src="img/clients/client-2.png"/></a><a href="#"><img src="img/clients/client-3.png"/></a><a href="#"><img src="img/clients/client-4.png"/></a></div>
@@ -231,13 +231,13 @@
       <div class="middle-sections">
         <div class="container wrapper">
           <div class="section">
-            <h6>INFORMATION</h6><a href="#">Delivery Information</a><a href="#">Discount</a><a href="#">Site Map</a><a href="#">Privacy Policy</a><a href="#">My Account</a>
+            <h6>NAVIGATION</h6><a href="#">Home</a><a href="#">Catalog</a><a href="#">Search</a>
           </div>
           <div class="section">
-            <h6>MY ACCOUNT</h6><a href="#">Sign In</a><a href="#">View Cart</a><a href="#">My Wishlist</a><a href="#">Check Out</a><a href="#">Track My Order</a>
+            <h6>CATEGORIES</h6><a href="#">Women</a><a href="#">Men</a><a href="#">Kids</a><a href="#">Jewellery</a><a href="#">Accessories</a>
           </div>
           <div class="section">
-            <h6>HELP</h6><a href="#">F.A.Q.</a><a href="#">Shipping</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a>
+            <h6>ACCOUNT</h6><a href="#">Sign In</a><a href="#">Sign Up</a><a href="#">My Homepage</a><a href="#">My Cart</a>
           </div>
           <div class="section">
             <h6>CONTACT INFO</h6>
@@ -264,6 +264,8 @@
     <div id="overlay" class="overlay"></div>
     <div id="menu" class="menu"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
       <hr/>
+      <div class="navigation wrapper"><a href="#">SIGN IN</a><a href="#">SIGN UP</a></div>
+      <hr/>
       <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
     </div>
     <div id="sign-in" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
@@ -274,8 +276,12 @@
           </div>
           <div class="modal-body">
             <p>Enter your credentials to sign in.</p>
-            <input type="text" id="sign-in-email" placeholder="E-mail" class="small"/>
+            <input type="text" id="sign-in-email" placeholder="E-mail" class="small wrong"/>
+            <p class="error">Wrong e-mail!</p>
             <input type="text" id="sign-in-password" placeholder="Password" class="small"/>
+            <p>
+              <input type="checkbox"/>Remember me?
+            </p>
           </div>
           <div class="modal-footer"><a href="#">
               <div class="button green-button small-button">SIGN IN</div></a></div>
@@ -290,7 +296,8 @@
           </div>
           <div class="modal-body">
             <p>Enter your credentials to create a new account.</p>
-            <input type="text" id="sign-up-name" placeholder="Name and Surname" class="small"/>
+            <input type="text" id="sign-up-first-name" placeholder="First Name" class="small"/>
+            <input type="text" id="sign-up-last-name" placeholder="Last Name" class="small"/>
             <input type="text" id="sign-up-phone" placeholder="Phone" class="small"/>
             <input type="text" id="sign-up-email" placeholder="E-mail" class="small"/>
             <input type="text" id="sign-up-password" placeholder="Password" class="small"/>

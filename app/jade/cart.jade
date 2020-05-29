@@ -150,28 +150,20 @@ html(lang="en")
 						input.small(type='number' placeholder='Postcode/Zip')
 					.section
 						h5 SHIPPING CART CALCULATION
-						// do it with blocks
-						table
-							tr
-								td
-									p Subtotal
-								td
-									p $450
-							tr
-								td
-									p Coupon
-								td
-									p -$50
-							tr
-								td
-									p Shipping
-								td
-									p Free Shipping
-							tr
-								td
-									p Total
-								td
-									p $400
+						.calculation.wrapper
+							.wrapper
+								p Subtotal
+								p $450
+							.wrapper
+								p Coupon
+								p -$50
+							.wrapper
+								p Shipping
+								p Free Shipping
+							hr
+							.wrapper
+								p Total
+								p $400
 				.order-controls.wrapper
 					button.white-button.small-button UPDATE TOTALS
 					button.green-button.small-button PROCEED TO CHECKOUT
@@ -194,25 +186,23 @@ html(lang="en")
 			.middle-sections
 				.container.wrapper
 					.section
-						h6 INFORMATION
-						a(href='#') Delivery Information
-						a(href='#') Discount
-						a(href='#') Site Map
-						a(href='#') Privacy Policy
-						a(href='#') My Account
+						h6 NAVIGATION
+						a(href='#') Home
+						a(href='#') Catalog
+						a(href='#') Search
 					.section
-						h6 MY ACCOUNT
+						h6 CATEGORIES
+						a(href='#') Women
+						a(href='#') Men
+						a(href='#') Kids
+						a(href='#') Jewellery
+						a(href='#') Accessories
+					.section
+						h6 ACCOUNT
 						a(href='#') Sign In
-						a(href='#') View Cart
-						a(href='#') My Wishlist
-						a(href='#') Check Out
-						a(href='#') Track My Order
-					.section
-						h6 HELP
-						a(href='#') F.A.Q.
-						a(href='#') Shipping
-						a(href='#') Contact Us
-						a(href='#') Privacy Policy
+						a(href='#') Sign Up
+						a(href='#') My Homepage
+						a(href='#') My Cart
 					.section
 						h6 CONTACT INFO
 						p
@@ -239,10 +229,15 @@ html(lang="en")
 							i.fab.fa-cc-amazon-pay
 
 		.overlay#overlay
+
 		.menu#menu
 			a.logo(href='#')
 				span.bold RENOSHOP
 				span BEE
+			hr
+			.navigation.wrapper
+				a(href='#') SIGN IN
+				a(href='#') SIGN UP
 			hr
 			.navigation.wrapper
 				a(href='#') HOME
@@ -251,3 +246,44 @@ html(lang="en")
 				a(href='#') KIDS
 				a(href='#') JEWELLERY
 				a(href='#') ACCESSORIES
+
+		#sign-in.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to sign in.
+						input.small(type='text' id='sign-in-email' placeholder='E-mail')
+						input.small(type='text' id='sign-in-password' placeholder='Password')
+						p
+							input(type='checkbox')
+							| Remember me?
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN IN
+
+		#sign-up.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to create a new account.
+						input.small(type='text' id='sign-up-first-name' placeholder='First Name')
+						input.small(type='text' id='sign-up-last-name' placeholder='Last Name')
+						input.small(type='text' id='sign-up-phone' placeholder='Phone')
+						input.small(type='text' id='sign-up-email' placeholder='E-mail')
+						input.small(type='text' id='sign-up-password' placeholder='Password')
+						input.small(type='text' id='sign-up-repeat-password' placeholder='Repeat password')
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN UP

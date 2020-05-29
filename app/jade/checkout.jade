@@ -64,13 +64,14 @@ html(lang="en")
 						a(href='#') Shop
 					li
 						a(href='#') Checkout
-				.order-details
+				.order-details.wrapper
 					.section
 						h5 BILLING DETAILS
-						p First Name and Last Name
+						p.important First Name and Last Name
 						.form-group.wrapper
 							input.small(type='text' id='first-name')
 							input.small(type='text' id='last-name')
+						p.important Country
 						select.medium
 							option(disabled selected) Country
 							option Ukraine
@@ -78,19 +79,56 @@ html(lang="en")
 							option Canada
 						p Company Name
 						input.small(type='text' id='company' placeholder='First Name')
-						p Address
+						p.important Address
 						input.small(type='text' id='address' placeholder='Street address')
 						p Postcode/Zip
 						input.small(type='number' id='postcode' placeholder='Postcode/Zip')
-						p Town/City
+						p.important Town/City
 						input.small(type='text' id='town' placeholder='Town/City')
-						p E-mail Address
+						p.important E-mail Address
 						input.small(type='text' id='e-mail')
-						p Phone
+						p.important Phone
 						input.small(type='text' id='phone')
-					.sectiom
-						// finish here
-				.order-controls
+					.section
+						.calculation.wrapper
+							h5 YOUR ORDER
+							.wrapper
+								p Product:
+								p Total
+							hr
+							.wrapper
+								p Casual men wearing cool shoe x 1
+								p $120
+							.wrapper
+								p Casual men wearing x 2
+								p $280
+							hr
+							.wrapper
+								p Subtotal
+								p $400
+							.wrapper
+								p Shipping
+								p Free Shipping
+							hr
+							.wrapper.bold
+								p Total
+								p $400
+							hr
+							.payment
+								p
+									input(type='radio' name='payment')
+									| Direct Bank Transfer
+								p.hint Make your payment directly into our bank account. Please use yur Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.
+								p
+									input(type='radio' name='payment')
+									| Cheque Payment
+								p
+									input(type='radio' name='payment')
+									| PayPal
+				.order-controls.wrapper
+					p
+						input(type='checkbox')
+						| Create an account?
 					button.green-button.small-button PROCEED TO CHECKOUT
 		footer
 			.top-section
@@ -111,25 +149,23 @@ html(lang="en")
 			.middle-sections
 				.container.wrapper
 					.section
-						h6 INFORMATION
-						a(href='#') Delivery Information
-						a(href='#') Discount
-						a(href='#') Site Map
-						a(href='#') Privacy Policy
-						a(href='#') My Account
+						h6 NAVIGATION
+						a(href='#') Home
+						a(href='#') Catalog
+						a(href='#') Search
 					.section
-						h6 MY ACCOUNT
+						h6 CATEGORIES
+						a(href='#') Women
+						a(href='#') Men
+						a(href='#') Kids
+						a(href='#') Jewellery
+						a(href='#') Accessories
+					.section
+						h6 ACCOUNT
 						a(href='#') Sign In
-						a(href='#') View Cart
-						a(href='#') My Wishlist
-						a(href='#') Check Out
-						a(href='#') Track My Order
-					.section
-						h6 HELP
-						a(href='#') F.A.Q.
-						a(href='#') Shipping
-						a(href='#') Contact Us
-						a(href='#') Privacy Policy
+						a(href='#') Sign Up
+						a(href='#') My Homepage
+						a(href='#') My Cart
 					.section
 						h6 CONTACT INFO
 						p
@@ -156,10 +192,15 @@ html(lang="en")
 							i.fab.fa-cc-amazon-pay
 
 		.overlay#overlay
+
 		.menu#menu
 			a.logo(href='#')
 				span.bold RENOSHOP
 				span BEE
+			hr
+			.navigation.wrapper
+				a(href='#') SIGN IN
+				a(href='#') SIGN UP
 			hr
 			.navigation.wrapper
 				a(href='#') HOME
@@ -168,3 +209,44 @@ html(lang="en")
 				a(href='#') KIDS
 				a(href='#') JEWELLERY
 				a(href='#') ACCESSORIES
+
+		#sign-in.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to sign in.
+						input.small(type='text' id='sign-in-email' placeholder='E-mail')
+						input.small(type='text' id='sign-in-password' placeholder='Password')
+						p
+							input(type='checkbox')
+							| Remember me?
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN IN
+
+		#sign-up.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						a.logo(href='#')
+							span.bold RENOSHOP
+							span BEE
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						p Enter your credentials to create a new account.
+						input.small(type='text' id='sign-up-first-name' placeholder='First Name')
+						input.small(type='text' id='sign-up-last-name' placeholder='Last Name')
+						input.small(type='text' id='sign-up-phone' placeholder='Phone')
+						input.small(type='text' id='sign-up-email' placeholder='E-mail')
+						input.small(type='text' id='sign-up-password' placeholder='Password')
+						input.small(type='text' id='sign-up-repeat-password' placeholder='Repeat password')
+					.modal-footer
+						a(href='#')
+							.button.green-button.small-button SIGN UP

@@ -49,7 +49,12 @@
 				justify-content: center
 	.filters-button
 		display: block
-
+	.section
+		.form-group
+			input
+				margin-right: 0 !important
+				&:not(:last-child)
+					margin-bottom: 10px
 
 @media (max-width: 992px)
 	.contacts-bar
@@ -64,17 +69,43 @@
 
 @media (max-width: 825px)
 	.container
-		width: 600px
+		width: auto
 	.product.large
 		justify-content: center
 		.product-info
 			width: 100%
+	.middle-sections
+		.wrapper
+			flex-wrap: wrap
+			.section
+				align-items: center
+				width: 50%
 
 @media (max-width: 700px)
 	.order-details
 		.section
 			width: 100%
+	.section
+		.form-group
+			input
+				&:not(:last-child)
+					margin-right: 10px !important
+					margin-bottom: 0
 
 @media (max-width: 625px)
+	.contacts-bar
+		display: none
+	.navigation-bar
+		padding: 0 15px
 	.static-block
 		width: 100%
+	.top-section, .bottom-section
+		p
+			text-align: center
+
+
+@media (max-width: 420px)
+	.logo:not(.short)
+		display: none
+	.logo.short
+		display: block

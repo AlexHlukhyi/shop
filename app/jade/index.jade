@@ -36,6 +36,9 @@ html(lang="en")
 				a.logo(href='#')
 					span.bold RENOSHOP
 					span BEE
+				a.logo.short(href='#')
+					span.bold R
+					span BEE
 				.navigation.wrapper
 					a(href='#') HOME
 					a(href='#') WOMEN
@@ -406,8 +409,7 @@ html(lang="en")
 					p Register your email for news and special offers.
 					.form-group.wrapper
 						input.big(type='text' id='subscription-email' placeholder='E-mail address...')
-						a(href='#')
-							.button.green-button CONTACT US
+						button.button.green-button CONTACT US
 				.clients.wrapper
 					a(href='#')
 						img(src='img/clients/client-1.png')
@@ -436,25 +438,23 @@ html(lang="en")
 			.middle-sections
 				.container.wrapper
 					.section
-						h6 INFORMATION
-						a(href='#') Delivery Information
-						a(href='#') Discount
-						a(href='#') Site Map
-						a(href='#') Privacy Policy
-						a(href='#') My Account
+						h6 NAVIGATION
+						a(href='#') Home
+						a(href='#') Catalog
+						a(href='#') Search
 					.section
-						h6 MY ACCOUNT
+						h6 CATEGORIES
+						a(href='#') Women
+						a(href='#') Men
+						a(href='#') Kids
+						a(href='#') Jewellery
+						a(href='#') Accessories
+					.section
+						h6 ACCOUNT
 						a(href='#') Sign In
-						a(href='#') View Cart
-						a(href='#') My Wishlist
-						a(href='#') Check Out
-						a(href='#') Track My Order
-					.section
-						h6 HELP
-						a(href='#') F.A.Q.
-						a(href='#') Shipping
-						a(href='#') Contact Us
-						a(href='#') Privacy Policy
+						a(href='#') Sign Up
+						a(href='#') My Homepage
+						a(href='#') My Cart
 					.section
 						h6 CONTACT INFO
 						p
@@ -488,6 +488,10 @@ html(lang="en")
 				span BEE
 			hr
 			.navigation.wrapper
+				a(href='#') SIGN IN
+				a(href='#') SIGN UP
+			hr
+			.navigation.wrapper
 				a(href='#') HOME
 				a(href='#') WOMEN
 				a(href='#') MEN
@@ -506,8 +510,12 @@ html(lang="en")
 							span(aria-hidden='true') ×
 					.modal-body
 						p Enter your credentials to sign in.
-						input.small(type='text' id='sign-in-email' placeholder='E-mail')
+						input.small.wrong(type='text' id='sign-in-email' placeholder='E-mail')
+						p.error Wrong e-mail!
 						input.small(type='text' id='sign-in-password' placeholder='Password')
+						p
+							input(type='checkbox')
+							| Remember me?
 					.modal-footer
 						a(href='#')
 							.button.green-button.small-button SIGN IN
@@ -523,7 +531,8 @@ html(lang="en")
 							span(aria-hidden='true') ×
 					.modal-body
 						p Enter your credentials to create a new account.
-						input.small(type='text' id='sign-up-name' placeholder='Name and Surname')
+						input.small(type='text' id='sign-up-first-name' placeholder='First Name')
+						input.small(type='text' id='sign-up-last-name' placeholder='Last Name')
 						input.small(type='text' id='sign-up-phone' placeholder='Phone')
 						input.small(type='text' id='sign-up-email' placeholder='E-mail')
 						input.small(type='text' id='sign-up-password' placeholder='Password')

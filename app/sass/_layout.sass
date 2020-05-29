@@ -181,10 +181,11 @@ header
 	margin: 0 -10px
 .feedback
 	margin-top: 50px
+	background-color: $lightblue
 .subscription, .clients
-	height: 300px
 	width: 50%
 .subscription
+	padding: 15px
 	background-color: $darkgrey
 	display: flex
 	flex-direction: column
@@ -192,20 +193,21 @@ header
 	align-items: center
 	.form-group
 		width: 60%
-	input
-		border: 1px solid white
+		justify-content: center
+		input, button
+			margin-bottom: 10px
+		input
+			border: 1px solid white
 	p
 		font-family: 'Roboto', sans-serif
 		font-size: 14px
 		color: white
 		margin: 20px 0 35px
+
 .clients
-	background-color: $lightblue
-	padding: 0 50px
+	padding: 50px
 	justify-content: space-around
-footer
-	p
-		white-space: nowrap
+	flex-wrap: wrap
 .top-section, .bottom-section
 	> .wrapper
 		flex-wrap: wrap
@@ -226,10 +228,11 @@ footer
 		i
 			font-size: 16pt
 .middle-sections
-	padding: 40px 0 90px
+	margin-top: 40px
 	.wrapper
 		align-items: flex-start
 	.section
+		margin-bottom: 90px
 		width: 25%
 		display: flex
 		flex-direction: column
@@ -303,8 +306,36 @@ footer
 		table
 			p
 				margin: 5px
+
+.calculation
+	border: 1px solid $thelightestgrey
+	padding: 15px 30px
+	flex-direction: column
+	h5
+		margin-top: 20px !important
+		align-self: flex-start
+	.wrapper
+		width: 100%
+		&.bold
+			p
+				font-weight: bold
+				font-size: 16pt
+	hr
+		width: calc(100% + 60px)
+		margin: 19px -30px
+	.payment
+		align-self: flex-start
+	p.hint
+		background-color: $thelightestgrey
+		padding: 10px 15px
+		text-align: justify
+		margin-top: 5px
+
 .order-controls
 	margin-bottom: 185px
+	p
+		font-size: 14px
+
 .filters, .menu
 	background-color: white
 	transition: all 0.5s

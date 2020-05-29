@@ -5,12 +5,15 @@ hr
 	background-color: $thelightestgrey
 	border: none
 
-a, button
-	white-space: nowrap
-	transition: color 0.3s
+p.important:after
+	content: ' *'
+	color: red
 
-button
-	box-sizing: border-box
+p.error
+	margin-top: -15px
+	font-size: 10pt !important
+	color: red
+	text-align: right
 
 select
 	font-family: 'Roboto', sans-serif
@@ -24,6 +27,9 @@ input
 	font-family: 'Roboto', sans-serif
 	border: 1px solid $thelightestgrey
 
+input.wrong
+	border: 1px solid red !important
+
 input.big
 	padding: 15px 25px
 
@@ -33,6 +39,9 @@ input.medium
 input.small
 	padding: 9px
 
+input[type='checkbox'], input[type='radio']
+	margin-right: 15px
+
 textarea
 	border: 1px solid $thelightestgrey
 	margin-bottom: 15px
@@ -40,6 +49,49 @@ textarea
 	resize: none
 	padding: 5px
 	min-height: 150px
+
+button.delete
+	color: black
+	i
+		font-size: 16pt
+	&:hover
+		color: $green
+
+a, button
+	white-space: nowrap
+	transition: color 0.3s
+
+button
+	box-sizing: border-box
+
+button.grey
+	font-size: 16pt
+	font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+	color: $grey
+	border: $grey solid 3px
+	transition: color 0.3s, border-color 0.3s
+	padding: 10px 25px
+	&:hover
+		color: $green
+		border-color: $green
+
+button.white
+	padding: 15px 30px
+	border: 1px solid $thelightestgrey
+	color: black
+
+button.green
+	padding: 15px 30px
+	font-family: 'Poppins', 'Roboto', sans-serif
+	background-color: $green
+	border: 1px solid $green
+	color: white
+	i
+		color: white
+
+button.small
+	padding: 9px
+
 
 .delete-button
 	color: black
@@ -77,10 +129,11 @@ textarea
 	padding: 9px
 
 .form-group
+	flex-wrap: wrap
 	input
 		flex-grow: 1
-		margin-right: 10px
-
+		&:not(:last-child)
+			margin-right: 10px
 
 .breadcrumbs
 	margin: 50px 0
@@ -104,6 +157,9 @@ textarea
 	.bold
 		color: $green
 		font-family: 'Poppins Bold', 'Roboto Black', sans-serif
+
+.logo.short
+	display: none
 
 h1, h2, h3, h4, h5, h6
 	white-space: nowrap
@@ -134,7 +190,7 @@ h6
 	margin-bottom: 40px
 
 .big-tag-line, .middle-tag-line, .small-tag-line
-	white-space: nowrap
+	text-align: center
 
 .big-tag-line, .middle-tag-line
 	font-family: 'Poppins Regular', 'Roboto', sans-serif

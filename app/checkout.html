@@ -46,14 +46,15 @@
           <li><a href="#">Shop</a></li>
           <li><a href="#">Checkout</a></li>
         </ul>
-        <div class="order-details">
+        <div class="order-details wrapper">
           <div class="section">
             <h5>BILLING DETAILS</h5>
-            <p>First Name and Last Name</p>
+            <p class="important">First Name and Last Name</p>
             <div class="form-group wrapper">
               <input type="text" id="first-name" class="small"/>
               <input type="text" id="last-name" class="small"/>
             </div>
+            <p class="important">Country</p>
             <select class="medium">
               <option disabled="disabled" selected="selected">Country</option>
               <option>Ukraine</option>
@@ -62,22 +63,67 @@
             </select>
             <p>Company Name</p>
             <input type="text" id="company" placeholder="First Name" class="small"/>
-            <p>Address</p>
+            <p class="important">Address</p>
             <input type="text" id="address" placeholder="Street address" class="small"/>
             <p>Postcode/Zip</p>
             <input type="number" id="postcode" placeholder="Postcode/Zip" class="small"/>
-            <p>Town/City</p>
+            <p class="important">Town/City</p>
             <input type="text" id="town" placeholder="Town/City" class="small"/>
-            <p>E-mail Address</p>
+            <p class="important">E-mail Address</p>
             <input type="text" id="e-mail" class="small"/>
-            <p>Phone</p>
+            <p class="important">Phone</p>
             <input type="text" id="phone" class="small"/>
           </div>
-          <div class="sectiom">
-            <!-- finish here-->
+          <div class="section">
+            <div class="calculation wrapper">
+              <h5>YOUR ORDER</h5>
+              <div class="wrapper">
+                <p>Product:</p>
+                <p>Total</p>
+              </div>
+              <hr/>
+              <div class="wrapper">
+                <p>Casual men wearing cool shoe x 1</p>
+                <p>$120</p>
+              </div>
+              <div class="wrapper">
+                <p>Casual men wearing x 2</p>
+                <p>$280</p>
+              </div>
+              <hr/>
+              <div class="wrapper">
+                <p>Subtotal</p>
+                <p>$400</p>
+              </div>
+              <div class="wrapper">
+                <p>Shipping</p>
+                <p>Free Shipping</p>
+              </div>
+              <hr/>
+              <div class="wrapper bold">
+                <p>Total</p>
+                <p>$400</p>
+              </div>
+              <hr/>
+              <div class="payment">
+                <p>
+                  <input type="radio" name="payment"/>Direct Bank Transfer
+                </p>
+                <p class="hint">Make your payment directly into our bank account. Please use yur Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+                <p>
+                  <input type="radio" name="payment"/>Cheque Payment
+                </p>
+                <p>
+                  <input type="radio" name="payment"/>PayPal
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="order-controls">
+        <div class="order-controls wrapper">
+          <p>
+            <input type="checkbox"/>Create an account?
+          </p>
           <button class="green-button small-button">PROCEED TO CHECKOUT</button>
         </div>
       </div>
@@ -94,13 +140,13 @@
       <div class="middle-sections">
         <div class="container wrapper">
           <div class="section">
-            <h6>INFORMATION</h6><a href="#">Delivery Information</a><a href="#">Discount</a><a href="#">Site Map</a><a href="#">Privacy Policy</a><a href="#">My Account</a>
+            <h6>NAVIGATION</h6><a href="#">Home</a><a href="#">Catalog</a><a href="#">Search</a>
           </div>
           <div class="section">
-            <h6>MY ACCOUNT</h6><a href="#">Sign In</a><a href="#">View Cart</a><a href="#">My Wishlist</a><a href="#">Check Out</a><a href="#">Track My Order</a>
+            <h6>CATEGORIES</h6><a href="#">Women</a><a href="#">Men</a><a href="#">Kids</a><a href="#">Jewellery</a><a href="#">Accessories</a>
           </div>
           <div class="section">
-            <h6>HELP</h6><a href="#">F.A.Q.</a><a href="#">Shipping</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a>
+            <h6>ACCOUNT</h6><a href="#">Sign In</a><a href="#">Sign Up</a><a href="#">My Homepage</a><a href="#">My Cart</a>
           </div>
           <div class="section">
             <h6>CONTACT INFO</h6>
@@ -127,7 +173,48 @@
     <div id="overlay" class="overlay"></div>
     <div id="menu" class="menu"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
       <hr/>
+      <div class="navigation wrapper"><a href="#">SIGN IN</a><a href="#">SIGN UP</a></div>
+      <hr/>
       <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
+    </div>
+    <div id="sign-in" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p>Enter your credentials to sign in.</p>
+            <input type="text" id="sign-in-email" placeholder="E-mail" class="small"/>
+            <input type="text" id="sign-in-password" placeholder="Password" class="small"/>
+            <p>
+              <input type="checkbox"/>Remember me?
+            </p>
+          </div>
+          <div class="modal-footer"><a href="#">
+              <div class="button green-button small-button">SIGN IN</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="sign-up" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p>Enter your credentials to create a new account.</p>
+            <input type="text" id="sign-up-first-name" placeholder="First Name" class="small"/>
+            <input type="text" id="sign-up-last-name" placeholder="Last Name" class="small"/>
+            <input type="text" id="sign-up-phone" placeholder="Phone" class="small"/>
+            <input type="text" id="sign-up-email" placeholder="E-mail" class="small"/>
+            <input type="text" id="sign-up-password" placeholder="Password" class="small"/>
+            <input type="text" id="sign-up-repeat-password" placeholder="Repeat password" class="small"/>
+          </div>
+          <div class="modal-footer"><a href="#">
+              <div class="button green-button small-button">SIGN UP</div></a></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
