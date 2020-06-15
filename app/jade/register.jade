@@ -60,12 +60,16 @@ html(lang="en")
 					li
 						a(href='#') Home
 					li
-						a(href='#') Login
+						a(href='#') Register
 				.credentials
-					p Enter your credentials to sign in.
+					p Enter your credentials to create a new account.
+					input.small(type='text' id='sign-up-first-name' placeholder='First Name')
+					input.small(type='text' id='sign-up-last-name' placeholder='Last Name')
+					input.small(type='text' id='sign-up-phone' placeholder='Phone')
 					input.small(type='text' placeholder='E-mail')
 					input.small(type='password' placeholder='Password')
-					.button.green-button.small-button SIGN IN
+					input.small(type='password' placeholder='Repeat password')
+					.button.green-button.small-button SIGN UP
 		footer
 			.top-section
 				.container.wrapper

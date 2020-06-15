@@ -21,20 +21,23 @@ html(lang="en")
 						i.fas.fa-envelope
 						div info@company.com
 				.user-info.wrapper
-					a(href='#').wrapper
-						//<i class='fas fa-sign-in-alt'></i>
-						i.fas.fa-user
-						//<div>Sign In</div>
-						div Alex Hlukhyi
+					a(href='#' data-toggle='modal' data-target='#sign-in').wrapper
+						//<i class='fas fa-user'></i>
+						i.fas.fa-sign-in-alt
+						//<div>Alex Hlukhyi</div>
+						div Sign In
 					div |
-					a(href='#').wrapper
-						//<i class='fas fa-user-plus'></i>
-						i.fas.fa-sign-out-alt
-						//<div>Sign Up</div>
-						div Sign Out
+					a(href='#' data-toggle='modal' data-target='#sign-up').wrapper
+						//<i class='fas fa-sign-out-alt'></i>
+						i.fas.fa-user-plus
+						//<div>Sign Out</div>
+						div Sign Up
 			.navigation-bar.wrapper
 				a.logo(href='#')
 					span.bold RENOSHOP
+					span BEE
+				a.logo.short(href='#')
+					span.bold R
 					span BEE
 				.navigation.wrapper
 					a(href='#') HOME
@@ -44,7 +47,7 @@ html(lang="en")
 					a(href='#') JEWELLERY
 					a(href='#') ACCESSORIES
 				.small-navigation.wrapper
-					a(href='#')#search-button
+					a(href='#' data-toggle='modal' data-target='#search')
 						i.fas.fa-search
 					a(href='#')
 						i.fas.fa-shopping-cart
@@ -62,16 +65,17 @@ html(lang="en")
 						a(href='#') Product Name
 				.product.large
 					.product-images
-						img
+						.image
+							img(src='img/products/1/1.jpg')
 						.thumbnails.wrapper
 							a(href='#')
-								img
+								img(src='img/products/1/1.jpg')
 							a(href='#')
-								img
+								img(src='img/products/1/1.jpg')
 							a(href='#')
-								img
+								img(src='img/products/1/1.jpg')
 							a(href='#')
-								img
+								img(src='img/products/1/1.jpg')
 					.product-info
 						a(href='#')
 							h5 Cruise Analog Dual
@@ -115,7 +119,7 @@ html(lang="en")
 						.reviews.wrapper
 							p 2 reviews to Cruise Analog Dual
 							.review.wrapper
-								img.thumbnail
+								img.thumbnail(src='img/user.jpg')
 								.review-body
 									.wrapper
 										.marks.wrapper
@@ -128,7 +132,7 @@ html(lang="en")
 									h5 Alex Hlukhyi
 									p Looks pretty good. Gonna buy another products here.
 							.review.wrapper
-								img.thumbnail
+								img.thumbnail(src='img/user.jpg')
 								.review-body
 									.wrapper
 										.marks.wrapper
@@ -141,7 +145,7 @@ html(lang="en")
 									h5 Daniel Kazantsev
 									p This one is great. I will definitely recommend your shop to my friends!
 							.review.wrapper
-								img.thumbnail
+								img.thumbnail(src='img/user.jpg')
 								.review-body
 									.wrapper
 										.marks.wrapper
@@ -171,7 +175,8 @@ html(lang="en")
 							.small-tag-line Check this out too
 						.items.wrapper
 							.product.small
-								img
+								.image
+									img(src='img/products/1/1.jpg')
 								.actions
 									a.action(href='#')
 										i.fas.fa-shopping-cart
@@ -189,7 +194,8 @@ html(lang="en")
 									i.fas.fa-star
 									i.far.fa-star
 							.product.small
-								img
+								.image
+									img(src='img/products/1/1.jpg')
 								.actions
 									a.action(href='#')
 										i.fas.fa-shopping-cart
@@ -207,7 +213,8 @@ html(lang="en")
 									i.fas.fa-star
 									i.far.fa-star
 							.product.small
-								img
+								.image
+									img(src='img/products/1/1.jpg')
 								.actions
 									a.action(href='#')
 										i.fas.fa-shopping-cart
@@ -225,7 +232,8 @@ html(lang="en")
 									i.fas.fa-star
 									i.far.fa-star
 							.product.small
-								img
+								.image
+									img(src='img/products/1/1.jpg')
 								.actions
 									a.action(href='#')
 										i.fas.fa-shopping-cart

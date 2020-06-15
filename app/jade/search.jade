@@ -21,17 +21,17 @@ html(lang="en")
 						i.fas.fa-envelope
 						div info@company.com
 				.user-info.wrapper
-					a(href='#').wrapper
-						//<i class='fas fa-sign-in-alt'></i>
-						i.fas.fa-user
-						//<div>Sign In</div>
-						div Alex Hlukhyi
+					a(href='#' data-toggle='modal' data-target='#sign-in').wrapper
+						//<i class='fas fa-user'></i>
+						i.fas.fa-sign-in-alt
+						//<div>Alex Hlukhyi</div>
+						div Sign In
 					div |
-					a(href='#').wrapper
-						//<i class='fas fa-user-plus'></i>
-						i.fas.fa-sign-out-alt
-						//<div>Sign Up</div>
-						div Sign Out
+					a(href='#' data-toggle='modal' data-target='#sign-up').wrapper
+						//<i class='fas fa-sign-out-alt'></i>
+						i.fas.fa-user-plus
+						//<div>Sign Out</div>
+						div Sign Up
 			.navigation-bar.wrapper
 				a.logo(href='#')
 					span.bold RENOSHOP
@@ -47,11 +47,7 @@ html(lang="en")
 					a(href='#') JEWELLERY
 					a(href='#') ACCESSORIES
 				.small-navigation.wrapper
-					#search.wrapper
-						a(href='#')#close-search-button
-							i.fas.fa-times
-						input.small(type='text' id='search-field' placeholder='Search...')
-					a(href='#')#search-button
+					a(href='#' data-toggle='modal' data-target='#search')
 						i.fas.fa-search
 					a(href='#')
 						i.fas.fa-shopping-cart
@@ -73,7 +69,8 @@ html(lang="en")
 						option Sort by cost
 				.items.wrapper
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -91,7 +88,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -109,7 +107,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -127,7 +126,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -145,7 +145,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -163,7 +164,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -181,7 +183,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -199,7 +202,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -217,7 +221,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -235,7 +240,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -253,7 +259,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart
@@ -271,7 +278,8 @@ html(lang="en")
 							i.fas.fa-star
 							i.far.fa-star
 					.product.small
-						img.small-image
+						.image
+							img(src='img/products/1/1.jpg')
 						.actions
 							a.action(href='#')
 								i.fas.fa-shopping-cart

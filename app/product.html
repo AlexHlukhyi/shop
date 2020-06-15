@@ -19,19 +19,19 @@
           <div>|</div><a href="#" class="wrapper"><i class="fas fa-envelope"></i>
             <div>info@company.com</div></a>
         </div>
-        <div class="user-info wrapper"><a href="#" class="wrapper">
-            <!--<i class='fas fa-sign-in-alt'></i>--><i class="fas fa-user"></i>
-            <!--<div>Sign In</div>-->
-            <div>Alex Hlukhyi</div></a>
-          <div>|</div><a href="#" class="wrapper">
-            <!--<i class='fas fa-user-plus'></i>--><i class="fas fa-sign-out-alt"></i>
-            <!--<div>Sign Up</div>-->
-            <div>Sign Out</div></a>
+        <div class="user-info wrapper"><a href="#" data-toggle="modal" data-target="#sign-in" class="wrapper">
+            <!--<i class='fas fa-user'></i>--><i class="fas fa-sign-in-alt"></i>
+            <!--<div>Alex Hlukhyi</div>-->
+            <div>Sign In</div></a>
+          <div>|</div><a href="#" data-toggle="modal" data-target="#sign-up" class="wrapper">
+            <!--<i class='fas fa-sign-out-alt'></i>--><i class="fas fa-user-plus"></i>
+            <!--<div>Sign Out</div>-->
+            <div>Sign Up</div></a>
         </div>
       </div>
-      <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a>
+      <div class="navigation-bar wrapper"><a href="#" class="logo"><span class="bold">RENOSHOP</span><span>BEE</span></a><a href="#" class="logo short"><span class="bold">R</span><span>BEE</span></a>
         <div class="navigation wrapper"><a href="#">HOME</a><a href="#">WOMEN</a><a href="#">MEN</a><a href="#">KIDS</a><a href="#">JEWELLERY</a><a href="#">ACCESSORIES</a></div>
-        <div class="small-navigation wrapper"><a href="#" id="search-button"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-shopping-cart">
+        <div class="small-navigation wrapper"><a href="#" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i></a><a href="#"><i class="fas fa-shopping-cart">
               <div class="items-count">3</div></i></a><a href="#" id="menu-button"><i class="fas fa-bars"></i></a></div>
       </div>
     </header>
@@ -43,8 +43,9 @@
           <li><a href="#">Product Name</a></li>
         </ul>
         <div class="product large">
-          <div class="product-images"><img/>
-            <div class="thumbnails wrapper"><a href="#"><img/></a><a href="#"><img/></a><a href="#"><img/></a><a href="#"><img/></a></div>
+          <div class="product-images">
+            <div class="image"><img src="img/products/1/1.jpg"/></div>
+            <div class="thumbnails wrapper"><a href="#"><img src="img/products/1/1.jpg"/></a><a href="#"><img src="img/products/1/1.jpg"/></a><a href="#"><img src="img/products/1/1.jpg"/></a><a href="#"><img src="img/products/1/1.jpg"/></a></div>
           </div>
           <div class="product-info"><a href="#">
               <h5>Cruise Analog Dual</h5></a>
@@ -81,7 +82,7 @@
             <h5>Reviews</h5>
             <div class="reviews wrapper">
               <p>2 reviews to Cruise Analog Dual</p>
-              <div class="review wrapper"><img class="thumbnail"/>
+              <div class="review wrapper"><img src="img/user.jpg" class="thumbnail"/>
                 <div class="review-body">
                   <div class="wrapper">
                     <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
@@ -91,7 +92,7 @@
                   <p>Looks pretty good. Gonna buy another products here.</p>
                 </div>
               </div>
-              <div class="review wrapper"><img class="thumbnail"/>
+              <div class="review wrapper"><img src="img/user.jpg" class="thumbnail"/>
                 <div class="review-body">
                   <div class="wrapper">
                     <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -101,7 +102,7 @@
                   <p>This one is great. I will definitely recommend your shop to my friends!</p>
                 </div>
               </div>
-              <div class="review wrapper"><img class="thumbnail"/>
+              <div class="review wrapper"><img src="img/user.jpg" class="thumbnail"/>
                 <div class="review-body">
                   <div class="wrapper">
                     <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
@@ -127,25 +128,29 @@
               <div class="small-tag-line">Check this out too</div>
             </div>
             <div class="items wrapper">
-              <div class="product small"><img/>
+              <div class="product small">
+                <div class="image"><img src="img/products/1/1.jpg"/></div>
                 <div class="actions"><a href="#" class="action"><i class="fas fa-shopping-cart"></i></a><a href="#" class="action"><i class="fas fa-heart"></i></a><a href="#" class="action"><i class="fas fa-retweet"></i></a></div><a href="#">
                   <h5>Cruise Dual Analog</h5></a>
                 <div class="price">250.00</div>
                 <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
               </div>
-              <div class="product small"><img/>
+              <div class="product small">
+                <div class="image"><img src="img/products/1/1.jpg"/></div>
                 <div class="actions"><a href="#" class="action"><i class="fas fa-shopping-cart"></i></a><a href="#" class="action"><i class="fas fa-heart"></i></a><a href="#" class="action"><i class="fas fa-retweet"></i></a></div><a href="#">
                   <h5>Crown Summit Backpack</h5></a>
                 <div class="price">250.00</div>
                 <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
               </div>
-              <div class="product small"><img/>
+              <div class="product small">
+                <div class="image"><img src="img/products/1/1.jpg"/></div>
                 <div class="actions"><a href="#" class="action"><i class="fas fa-shopping-cart"></i></a><a href="#" class="action"><i class="fas fa-heart"></i></a><a href="#" class="action"><i class="fas fa-retweet"></i></a></div><a href="#">
                   <h5>Joust Duffle Bag</h5></a>
                 <div class="price">250.00</div>
                 <div class="marks wrapper"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
               </div>
-              <div class="product small"><img/>
+              <div class="product small">
+                <div class="image"><img src="img/products/1/1.jpg"/></div>
                 <div class="actions"><a href="#" class="action"><i class="fas fa-shopping-cart"></i></a><a href="#" class="action"><i class="fas fa-heart"></i></a><a href="#" class="action"><i class="fas fa-retweet"></i></a></div><a href="#">
                   <h5>Voyage Yoga Bag</h5></a>
                 <div class="price">250.00</div>

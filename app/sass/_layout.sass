@@ -10,6 +10,7 @@ header
 		i
 			font-size: 18pt
 .contacts, .user-info
+	flex-wrap: nowrap
 	color: white
 	font-family: Roboto, sans-serif
 	> div
@@ -56,26 +57,39 @@ header
 	background-color: $darkgrey
 .carousel-indicators
 	li
-		background-color: $grey
+		background-color: $lightgrey
 		&:not(.active):hover
-			background-color: $lightgrey
+			background-color: $lightestgrey
 	.active
 		background-color: $green
 .carousel-control-prev, .carousel-control-next
 	width: 75px
-	color: $grey
+	color: $lightgrey
 	opacity: 1
 	transition: color 0.3s
 	&:link
-		color: $grey
+		color: $lightgrey
 	&:hover
 		color: $green
 	i
 		font-size: 20pt
 .carousel-item
+	position: relative
 	min-height: 600px
 	height: calc(100vh - 160px)
 	max-height: 800px
+	background-size: cover
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $darkgrey
+		opacity: 0.9
+		z-index: -1
 .slide-content
 	height: 100%
 	padding: 15px
@@ -85,6 +99,8 @@ header
 	align-items: flex-start
 	p, a
 		margin: 10px 0
+	p
+		color: $lightgrey
 	h2
 		&:nth-child(2)
 			color: $green
@@ -112,7 +128,6 @@ header
 			border-bottom: 1px solid $yellow
 .static-blocks
 	background-color: $lightblue
-	flex-wrap: wrap
 .static-block
 	height: 200px
 	width: 25%
@@ -142,13 +157,26 @@ header
 	align-items: center
 	flex-direction: column
 	overflow: hidden
+	background-size: cover
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: $darkgrey
+		opacity: 0.75
+		z-index: -1
+		transition: opacity 0.5s
 	p
 		font-family: 'Roboto Light', sans-serif
 		font-size: 14pt
 		transform: scaleX(0.85)
 		letter-spacing: 5px
-	&:hover
-		background-color: $grey
+	&:hover:before
+		opacity: 0.5
 	img
 		position: absolute
 		top: calc(50% - 214px)
@@ -164,7 +192,6 @@ header
 		h3
 			margin-top: 25px
 .items
-	flex-wrap: wrap
 	justify-content: flex-start
 	align-items: flex-start
 	overflow: hidden
@@ -181,6 +208,19 @@ header
 	flex-direction: column
 	justify-content: center
 	align-items: center
+	background-size: cover
+	position: relative
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: $darkgrey
+		opacity: 0.75
+		z-index: -1
 	.form-group
 		width: 60%
 		justify-content: center
@@ -197,10 +237,8 @@ header
 .clients
 	padding: 50px
 	justify-content: space-around
-	flex-wrap: wrap
 .top-section, .bottom-section
 	> .wrapper
-		flex-wrap: wrap
 		> .wrapper, > div
 			height: 60px
 	p
@@ -256,6 +294,9 @@ header
 		margin: 25px 0
 	hr
 		margin: 25px 0
+	.size-filter
+		.wrapper
+			justify-content: left
 	&.active
 		left: 0
 .categories-filter, .color-filter
@@ -280,7 +321,6 @@ header
 
 .order-details
 	margin: 0 -15px
-	flex-wrap: wrap
 	.section
 		width: calc(50% - 30px)
 		margin: 15px
@@ -359,3 +399,13 @@ header
 		align-items: flex-start
 	&.active
 		right: 0
+
+.credentials
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 100px
+	> *
+		&:not(:last-child)
+		&:not(:last-child)
+			margin-bottom: 25px

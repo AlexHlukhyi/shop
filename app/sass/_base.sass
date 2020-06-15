@@ -1,8 +1,23 @@
+html, body
+	height: 100%
+
 body
+	display: flex
+	flex-direction: column
 	color: $grey
+
+main
+	flex: 1 0 auto
+
+footer
+	flex-shrink: 0
 
 header > div, .best-sellers, .static-blocks, .featured-products
 	padding: 0 70px
+
+.best-sellers, .featured-products
+	max-width: 1920px
+	margin: 0 auto
 
 .container
 	width: 100%
@@ -14,5 +29,5 @@ header > div, .best-sellers, .static-blocks, .featured-products
 .wrapper
 	display: flex
 	justify-content: space-between
-	flex-wrap: nowrap
+	flex-wrap: wrap
 	align-items: center
